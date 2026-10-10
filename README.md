@@ -58,6 +58,22 @@ Ikkalasi ham http://localhost:8000/admin manzilida, login bo'yicha farqlanadi.
 Masalan, Fayz choyxona uchun: `.venv\Scripts\python manage.py add_manager fayz_xodim fayz`.
 Oshxona kodlari bosh admin panelidagi «Oshxonalar» ro'yxatida ko'rinadi (`fayz`, `chinor`, `forish`, …).
 
+## Login va parollar
+
+> **Diqqat:** bu parollar faqat shu kompyuterdagi sinov bazasi uchun. Saytni internetga chiqarishdan oldin
+> hammasini almashtiring va bu bo'limni o'chirib tashlang — README GitHub'ga yuklanadi va uni boshqalar ko'rishi mumkin.
+
+Kirish manzili: http://localhost:8000/admin
+
+| Login | Parol | Panel | Nimani ko'radi |
+|---|---|---|---|
+| `admin` | `agry-qgcf-uah2` | Bosh admin | hammasi |
+| `fayz_xodim` | `nf9t-v2uh-hdau` | Oshxona paneli | Fayz choyxona |
+| `chinor_xodim` | `6krg-uc27-fevd` | Oshxona paneli | Chinor choyxona |
+| `forish_xodim` | `7ttx-rx97-bdu9` | Oshxona paneli | Forish choyxona |
+
+Parolni almashtirish: panelga kirib, yuqori o'ngdagi «Parolni o'zgartirish» havolasini bosing.
+
 ## Foydali buyruqlar
 
 | Buyruq | Qayerda | Nima qiladi |
