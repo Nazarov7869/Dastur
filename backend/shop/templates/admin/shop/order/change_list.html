@@ -1,0 +1,16 @@
+{% extends "admin/change_list.html" %}
+
+{% block extrahead %}
+  {{ block.super }}
+  <script>
+    // Yangi buyurtmalar ko'rinishi uchun ro'yxat har 30 soniyada yangilanadi.
+    // Xodim biror narsani o'zgartirayotgan yoki belgilagan bo'lsa — yangilanmaydi, ishi yo'qolmasin.
+    document.addEventListener('DOMContentLoaded', function () {
+      var busy = false;
+      document.addEventListener('change', function () { busy = true; });
+      setInterval(function () {
+        if (!busy && !document.hidden) location.reload();
+      }, 30000);
+    });
+  </script>
+{% endblock %}

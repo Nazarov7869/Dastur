@@ -1,0 +1,5508 @@
+{
+ "categories": [
+  {
+   "slug": "choyxona",
+   "name": {
+    "uz": "Choyxona",
+    "ru": "Чайхана",
+    "en": "Teahouse"
+   },
+   "photo": "/img/kabob.jpg",
+   "order": 0
+  },
+  {
+   "slug": "milliy",
+   "name": {
+    "uz": "Milliy",
+    "ru": "Национальная",
+    "en": "Uzbek"
+   },
+   "photo": "/img/plov.jpg",
+   "order": 1
+  },
+  {
+   "slug": "pizza",
+   "name": {
+    "uz": "Pitsa",
+    "ru": "Пицца",
+    "en": "Pizza"
+   },
+   "photo": "/img/pizza4.jpg",
+   "order": 2
+  },
+  {
+   "slug": "burger",
+   "name": {
+    "uz": "Burger",
+    "ru": "Бургеры",
+    "en": "Burgers"
+   },
+   "photo": "/img/burger1.jpg",
+   "order": 3
+  },
+  {
+   "slug": "sushi",
+   "name": {
+    "uz": "Sushi",
+    "ru": "Суши",
+    "en": "Sushi"
+   },
+   "photo": "/img/sushi1.jpg",
+   "order": 4
+  },
+  {
+   "slug": "gosht",
+   "name": {
+    "uz": "Go'sht",
+    "ru": "Мясо",
+    "en": "Meat"
+   },
+   "photo": "/img/steak3.jpg",
+   "order": 5
+  },
+  {
+   "slug": "pasta",
+   "name": {
+    "uz": "Pasta",
+    "ru": "Паста",
+    "en": "Pasta"
+   },
+   "photo": "/img/pasta3.jpg",
+   "order": 6
+  },
+  {
+   "slug": "nonushta",
+   "name": {
+    "uz": "Nonushta",
+    "ru": "Завтраки",
+    "en": "Breakfast"
+   },
+   "photo": "/img/pancakes2.jpg",
+   "order": 7
+  },
+  {
+   "slug": "shirinlik",
+   "name": {
+    "uz": "Shirinlik",
+    "ru": "Десерты",
+    "en": "Desserts"
+   },
+   "photo": "/img/cake1.jpg",
+   "order": 8
+  }
+ ],
+ "restaurants": [
+  {
+   "slug": "fayz",
+   "name": "Fayz choyxona",
+   "categories": [
+    "choyxona",
+    "milliy",
+    "gosht"
+   ],
+   "rating": 4.8,
+   "reviews": 320,
+   "delivery_minutes": 30,
+   "distance_km": 2.1,
+   "discount_percent": 0,
+   "address": "Do'stlik tumani",
+   "hours": "09:00 – 23:00",
+   "cover": "/img/covers/fayz.jpg",
+   "order": 0,
+   "sections": [
+    {
+     "title": {
+      "uz": "Aksiyalar",
+      "ru": "Акции",
+      "en": "Deals"
+     },
+     "order": 0,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Osh to'plami",
+        "ru": "Набор «Плов»",
+        "en": "Plov set"
+       },
+       "description": {
+        "uz": "Choyxona oshi, mavsumiy salat va tandir non",
+        "ru": "Чайханский плов, сезонный салат и тандырная лепёшка",
+        "en": "Teahouse plov, seasonal salad and tandoor bread"
+       },
+       "price": 55000,
+       "old_price": 67000,
+       "weight": "650 g",
+       "photo": "/img/plov2.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Kabob to'plami",
+        "ru": "Набор «Шашлык»",
+        "en": "Kebab set"
+       },
+       "description": {
+        "uz": "4 six qo'y go'shtli kabob, non va piyoz",
+        "ru": "4 шампура шашлыка из баранины, лепёшка и лук",
+        "en": "4 lamb kebab skewers, bread and onion"
+       },
+       "price": 79000,
+       "old_price": 93000,
+       "weight": "520 g",
+       "photo": "/img/shashlik.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Oilaviy assorti",
+        "ru": "Семейное ассорти",
+        "en": "Family platter"
+       },
+       "description": {
+        "uz": "4 kishilik go'shtli assorti aksiya narxida",
+        "ru": "Мясное ассорти на четверых по цене акции",
+        "en": "Meat platter for four at the deal price"
+       },
+       "price": 357000,
+       "old_price": 420000,
+       "weight": "1.4 kg",
+       "photo": "/img/kebab1.jpg",
+       "order": 2
+      },
+      {
+       "name": {
+        "uz": "Somsa 3+1",
+        "ru": "Самса 3+1",
+        "en": "Samsa 3+1"
+       },
+       "description": {
+        "uz": "4 dona tandir somsa — 3 tasining narxida",
+        "ru": "4 тандырные самсы по цене трёх",
+        "en": "4 tandoor samsas for the price of 3"
+       },
+       "price": 33000,
+       "old_price": 44000,
+       "weight": "440 g",
+       "photo": "/img/samsa.jpg",
+       "order": 3
+      }
+     ]
+    },
+    {
+     "title": {
+      "uz": "Assorti",
+      "ru": "Ассорти",
+      "en": "Platters"
+     },
+     "order": 1,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Go'shtli assorti",
+        "ru": "Мясное ассорти",
+        "en": "Meat platter"
+       },
+       "description": {
+        "uz": "4 kishilik, 5 xil go'sht va sabzavot",
+        "ru": "На четверых: 5 видов мяса и овощи",
+        "en": "For four: 5 kinds of meat and vegetables"
+       },
+       "price": 420000,
+       "old_price": null,
+       "weight": "1.4 kg",
+       "photo": "/img/kebab1.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Kabob assorti",
+        "ru": "Ассорти шашлыков",
+        "en": "Kebab platter"
+       },
+       "description": {
+        "uz": "5 six, piyoz bilan",
+        "ru": "5 шампуров, с луком",
+        "en": "5 skewers, with onion"
+       },
+       "price": 98000,
+       "old_price": null,
+       "weight": "500 g",
+       "photo": "/img/kabob.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Kichik assorti",
+        "ru": "Малое ассорти",
+        "en": "Small platter"
+       },
+       "description": {
+        "uz": "2 kishilik: qo'y kabob, tovuq kabob, qovurg'a",
+        "ru": "На двоих: шашлык из баранины и курицы, рёбрышки",
+        "en": "For two: lamb kebab, chicken kebab, ribs"
+       },
+       "price": 210000,
+       "old_price": null,
+       "weight": "750 g",
+       "photo": "/img/ribs.jpg",
+       "order": 2
+      },
+      {
+       "name": {
+        "uz": "Tovuq assorti",
+        "ru": "Куриное ассорти",
+        "en": "Chicken platter"
+       },
+       "description": {
+        "uz": "Tabaka jo'ja va 2 six tovuq kabob",
+        "ru": "Цыплёнок табака и 2 шампура куриного шашлыка",
+        "en": "Chicken tabaka and 2 chicken kebab skewers"
+       },
+       "price": 96000,
+       "old_price": null,
+       "weight": "900 g",
+       "photo": "/img/chicken.jpg",
+       "order": 3
+      },
+      {
+       "name": {
+        "uz": "Milliy assorti",
+        "ru": "Национальное ассорти",
+        "en": "Uzbek platter"
+       },
+       "description": {
+        "uz": "4 kishilik: osh, manti va somsa",
+        "ru": "На четверых: плов, манты и самса",
+        "en": "For four: plov, manti and samsa"
+       },
+       "price": 168000,
+       "old_price": null,
+       "weight": "1.6 kg",
+       "photo": "/img/plov.jpg",
+       "order": 4
+      }
+     ]
+    },
+    {
+     "title": {
+      "uz": "Kabob va go'sht",
+      "ru": "Шашлык и мясо",
+      "en": "Kebabs and meat"
+     },
+     "order": 2,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Qo'y go'shtli kabob",
+        "ru": "Шашлык из баранины",
+        "en": "Lamb kebab"
+       },
+       "description": {
+        "uz": "2 six",
+        "ru": "2 шампура",
+        "en": "2 skewers"
+       },
+       "price": 44000,
+       "old_price": null,
+       "weight": "200 g",
+       "photo": "/img/shashlik.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Tovuq kabob",
+        "ru": "Куриный шашлык",
+        "en": "Chicken kebab"
+       },
+       "description": {
+        "uz": "2 six",
+        "ru": "2 шампура",
+        "en": "2 skewers"
+       },
+       "price": 32000,
+       "old_price": null,
+       "weight": "220 g",
+       "photo": "/img/tovuqkabob.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Qovurg'a",
+        "ru": "Рёбрышки",
+        "en": "Ribs"
+       },
+       "description": {
+        "uz": "Olovda pishirilgan, kartoshka bilan",
+        "ru": "Приготовлены на огне, с картофелем",
+        "en": "Flame-grilled, with potatoes"
+       },
+       "price": 145000,
+       "old_price": null,
+       "weight": "450 g",
+       "photo": "/img/ribs.jpg",
+       "order": 2
+      },
+      {
+       "name": {
+        "uz": "Tabaka jo'ja",
+        "ru": "Цыплёнок табака",
+        "en": "Chicken tabaka"
+       },
+       "description": {
+        "uz": "Butun jo'ja, sarimsoqli sous",
+        "ru": "Целый цыплёнок, чесночный соус",
+        "en": "Whole chicken, garlic sauce"
+       },
+       "price": 68000,
+       "old_price": null,
+       "weight": "700 g",
+       "photo": "/img/chicken.jpg",
+       "order": 3
+      }
+     ]
+    },
+    {
+     "title": {
+      "uz": "Milliy taomlar",
+      "ru": "Национальные блюда",
+      "en": "Uzbek dishes"
+     },
+     "order": 3,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Choyxona oshi",
+        "ru": "Чайханский плов",
+        "en": "Teahouse plov"
+       },
+       "description": {
+        "uz": "Mol go'shti, qizil sabzi",
+        "ru": "Говядина, красная морковь",
+        "en": "Beef, red carrot"
+       },
+       "price": 38000,
+       "old_price": null,
+       "weight": "400 g",
+       "photo": "/img/plov2.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "To'y oshi",
+        "ru": "Свадебный плов",
+        "en": "Wedding plov"
+       },
+       "description": {
+        "uz": "Qo'y go'shti, sariq sabzi, no'xat, mayiz",
+        "ru": "Баранина, жёлтая морковь, нут, изюм",
+        "en": "Lamb, yellow carrot, chickpeas, raisins"
+       },
+       "price": 42000,
+       "old_price": null,
+       "weight": "400 g",
+       "photo": "/img/plov.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Manti",
+        "ru": "Манты",
+        "en": "Manti"
+       },
+       "description": {
+        "uz": "5 dona, qo'y go'shti va piyoz",
+        "ru": "5 штук, баранина и лук",
+        "en": "5 pieces, lamb and onion"
+       },
+       "price": 34000,
+       "old_price": null,
+       "weight": "350 g",
+       "photo": "/img/manti.jpg",
+       "order": 2
+      },
+      {
+       "name": {
+        "uz": "Dimlama",
+        "ru": "Димлама",
+        "en": "Dimlama"
+       },
+       "description": {
+        "uz": "Go'sht va mavsumiy sabzavotlar",
+        "ru": "Мясо и сезонные овощи",
+        "en": "Meat and seasonal vegetables"
+       },
+       "price": 46000,
+       "old_price": null,
+       "weight": "420 g",
+       "photo": "/img/dimlama.jpg",
+       "order": 3
+      },
+      {
+       "name": {
+        "uz": "Qovurma lag'mon",
+        "ru": "Жареный лагман",
+        "en": "Fried lagman"
+       },
+       "description": {
+        "uz": "Cho'zma ugra, go'sht, bulg'or qalampiri",
+        "ru": "Тянутая лапша, мясо, болгарский перец",
+        "en": "Hand-pulled noodles, meat, bell pepper"
+       },
+       "price": 36000,
+       "old_price": null,
+       "weight": "380 g",
+       "photo": "/img/lagman.jpg",
+       "order": 4
+      }
+     ]
+    },
+    {
+     "title": {
+      "uz": "Sho'rvalar",
+      "ru": "Супы",
+      "en": "Soups"
+     },
+     "order": 4,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Mastava",
+        "ru": "Мастава",
+        "en": "Mastava"
+       },
+       "description": {
+        "uz": "Guruchli, qatiq bilan",
+        "ru": "С рисом, подаётся с катыком",
+        "en": "Rice soup, served with yoghurt"
+       },
+       "price": 26000,
+       "old_price": null,
+       "weight": "400 ml",
+       "photo": "/img/mastava.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Chuchvara",
+        "ru": "Чучвара",
+        "en": "Chuchvara"
+       },
+       "description": {
+        "uz": "Sho'rvada, ko'katlar bilan",
+        "ru": "В бульоне, с зеленью",
+        "en": "In broth, with herbs"
+       },
+       "price": 30000,
+       "old_price": null,
+       "weight": "400 ml",
+       "photo": "/img/chuchvara.jpg",
+       "order": 1
+      }
+     ]
+    },
+    {
+     "title": {
+      "uz": "Non va salat",
+      "ru": "Хлеб и салаты",
+      "en": "Bread and salads"
+     },
+     "order": 5,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Tandir non",
+        "ru": "Тандырная лепёшка",
+        "en": "Tandoor bread"
+       },
+       "description": {
+        "uz": "Issiq, kunjutli",
+        "ru": "Горячая, с кунжутом",
+        "en": "Hot, with sesame"
+       },
+       "price": 5000,
+       "old_price": null,
+       "weight": "1 dona",
+       "photo": "/img/non.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Somsa",
+        "ru": "Самса",
+        "en": "Samsa"
+       },
+       "description": {
+        "uz": "Tandirda, go'shtli, 2 dona",
+        "ru": "Из тандыра, с мясом, 2 штуки",
+        "en": "Tandoor-baked, with meat, 2 pieces"
+       },
+       "price": 22000,
+       "old_price": null,
+       "weight": "220 g",
+       "photo": "/img/samsa.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Mavsumiy salat",
+        "ru": "Сезонный салат",
+        "en": "Seasonal salad"
+       },
+       "description": {
+        "uz": "Yangi sabzavotlar, zaytun moyi",
+        "ru": "Свежие овощи, оливковое масло",
+        "en": "Fresh vegetables, olive oil"
+       },
+       "price": 24000,
+       "old_price": null,
+       "weight": "220 g",
+       "photo": "/img/veggies.jpg",
+       "order": 2
+      }
+     ]
+    },
+    {
+     "title": {
+      "uz": "Ichimliklar",
+      "ru": "Напитки",
+      "en": "Drinks"
+     },
+     "order": 6,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Limonad",
+        "ru": "Лимонад",
+        "en": "Lemonade"
+       },
+       "description": {
+        "uz": "Uy usulida, limon va yalpiz bilan",
+        "ru": "Домашний, с лимоном и мятой",
+        "en": "Homemade, with lemon and mint"
+       },
+       "price": 16000,
+       "old_price": null,
+       "weight": "0.4 l",
+       "photo": "/img/lemonade.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Muzli choy",
+        "ru": "Холодный чай",
+        "en": "Iced tea"
+       },
+       "description": {
+        "uz": "Laym bilan, sovuq holda",
+        "ru": "С лаймом, охлаждённый",
+        "en": "With lime, served cold"
+       },
+       "price": 14000,
+       "old_price": null,
+       "weight": "0.4 l",
+       "photo": "/img/tea.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Suv",
+        "ru": "Вода",
+        "en": "Water"
+       },
+       "description": {
+        "uz": "Gazsiz",
+        "ru": "Без газа",
+        "en": "Still"
+       },
+       "price": 5000,
+       "old_price": null,
+       "weight": "0.5 l",
+       "photo": "/img/water.jpg",
+       "order": 2
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "chinor",
+   "name": "Chinor choyxona",
+   "categories": [
+    "choyxona",
+    "milliy"
+   ],
+   "rating": 4.7,
+   "reviews": 210,
+   "delivery_minutes": 30,
+   "distance_km": 2.6,
+   "discount_percent": 0,
+   "address": "Do'stlik tumani",
+   "hours": "09:00 – 23:00",
+   "cover": "/img/covers/chinor.jpg",
+   "order": 1,
+   "sections": [
+    {
+     "title": {
+      "uz": "Aksiyalar",
+      "ru": "Акции",
+      "en": "Deals"
+     },
+     "order": 0,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Osh to'plami",
+        "ru": "Набор «Плов»",
+        "en": "Plov set"
+       },
+       "description": {
+        "uz": "Choyxona oshi, mavsumiy salat va tandir non",
+        "ru": "Чайханский плов, сезонный салат и тандырная лепёшка",
+        "en": "Teahouse plov, seasonal salad and tandoor bread"
+       },
+       "price": 55000,
+       "old_price": 67000,
+       "weight": "650 g",
+       "photo": "/img/plov2.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Kabob to'plami",
+        "ru": "Набор «Шашлык»",
+        "en": "Kebab set"
+       },
+       "description": {
+        "uz": "4 six qo'y go'shtli kabob, non va piyoz",
+        "ru": "4 шампура шашлыка из баранины, лепёшка и лук",
+        "en": "4 lamb kebab skewers, bread and onion"
+       },
+       "price": 79000,
+       "old_price": 93000,
+       "weight": "520 g",
+       "photo": "/img/shashlik.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Oilaviy assorti",
+        "ru": "Семейное ассорти",
+        "en": "Family platter"
+       },
+       "description": {
+        "uz": "4 kishilik go'shtli assorti aksiya narxida",
+        "ru": "Мясное ассорти на четверых по цене акции",
+        "en": "Meat platter for four at the deal price"
+       },
+       "price": 357000,
+       "old_price": 420000,
+       "weight": "1.4 kg",
+       "photo": "/img/kebab1.jpg",
+       "order": 2
+      },
+      {
+       "name": {
+        "uz": "Somsa 3+1",
+        "ru": "Самса 3+1",
+        "en": "Samsa 3+1"
+       },
+       "description": {
+        "uz": "4 dona tandir somsa — 3 tasining narxida",
+        "ru": "4 тандырные самсы по цене трёх",
+        "en": "4 tandoor samsas for the price of 3"
+       },
+       "price": 33000,
+       "old_price": 44000,
+       "weight": "440 g",
+       "photo": "/img/samsa.jpg",
+       "order": 3
+      }
+     ]
+    },
+    {
+     "title": {
+      "uz": "Assorti",
+      "ru": "Ассорти",
+      "en": "Platters"
+     },
+     "order": 1,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Go'shtli assorti",
+        "ru": "Мясное ассорти",
+        "en": "Meat platter"
+       },
+       "description": {
+        "uz": "4 kishilik, 5 xil go'sht va sabzavot",
+        "ru": "На четверых: 5 видов мяса и овощи",
+        "en": "For four: 5 kinds of meat and vegetables"
+       },
+       "price": 420000,
+       "old_price": null,
+       "weight": "1.4 kg",
+       "photo": "/img/kebab1.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Kabob assorti",
+        "ru": "Ассорти шашлыков",
+        "en": "Kebab platter"
+       },
+       "description": {
+        "uz": "5 six, piyoz bilan",
+        "ru": "5 шампуров, с луком",
+        "en": "5 skewers, with onion"
+       },
+       "price": 98000,
+       "old_price": null,
+       "weight": "500 g",
+       "photo": "/img/kabob.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Kichik assorti",
+        "ru": "Малое ассорти",
+        "en": "Small platter"
+       },
+       "description": {
+        "uz": "2 kishilik: qo'y kabob, tovuq kabob, qovurg'a",
+        "ru": "На двоих: шашлык из баранины и курицы, рёбрышки",
+        "en": "For two: lamb kebab, chicken kebab, ribs"
+       },
+       "price": 210000,
+       "old_price": null,
+       "weight": "750 g",
+       "photo": "/img/ribs.jpg",
+       "order": 2
+      },
+      {
+       "name": {
+        "uz": "Tovuq assorti",
+        "ru": "Куриное ассорти",
+        "en": "Chicken platter"
+       },
+       "description": {
+        "uz": "Tabaka jo'ja va 2 six tovuq kabob",
+        "ru": "Цыплёнок табака и 2 шампура куриного шашлыка",
+        "en": "Chicken tabaka and 2 chicken kebab skewers"
+       },
+       "price": 96000,
+       "old_price": null,
+       "weight": "900 g",
+       "photo": "/img/chicken.jpg",
+       "order": 3
+      },
+      {
+       "name": {
+        "uz": "Milliy assorti",
+        "ru": "Национальное ассорти",
+        "en": "Uzbek platter"
+       },
+       "description": {
+        "uz": "4 kishilik: osh, manti va somsa",
+        "ru": "На четверых: плов, манты и самса",
+        "en": "For four: plov, manti and samsa"
+       },
+       "price": 168000,
+       "old_price": null,
+       "weight": "1.6 kg",
+       "photo": "/img/plov.jpg",
+       "order": 4
+      }
+     ]
+    },
+    {
+     "title": {
+      "uz": "Kabob va go'sht",
+      "ru": "Шашлык и мясо",
+      "en": "Kebabs and meat"
+     },
+     "order": 2,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Qo'y go'shtli kabob",
+        "ru": "Шашлык из баранины",
+        "en": "Lamb kebab"
+       },
+       "description": {
+        "uz": "2 six",
+        "ru": "2 шампура",
+        "en": "2 skewers"
+       },
+       "price": 44000,
+       "old_price": null,
+       "weight": "200 g",
+       "photo": "/img/shashlik.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Tovuq kabob",
+        "ru": "Куриный шашлык",
+        "en": "Chicken kebab"
+       },
+       "description": {
+        "uz": "2 six",
+        "ru": "2 шампура",
+        "en": "2 skewers"
+       },
+       "price": 32000,
+       "old_price": null,
+       "weight": "220 g",
+       "photo": "/img/tovuqkabob.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Qovurg'a",
+        "ru": "Рёбрышки",
+        "en": "Ribs"
+       },
+       "description": {
+        "uz": "Olovda pishirilgan, kartoshka bilan",
+        "ru": "Приготовлены на огне, с картофелем",
+        "en": "Flame-grilled, with potatoes"
+       },
+       "price": 145000,
+       "old_price": null,
+       "weight": "450 g",
+       "photo": "/img/ribs.jpg",
+       "order": 2
+      },
+      {
+       "name": {
+        "uz": "Tabaka jo'ja",
+        "ru": "Цыплёнок табака",
+        "en": "Chicken tabaka"
+       },
+       "description": {
+        "uz": "Butun jo'ja, sarimsoqli sous",
+        "ru": "Целый цыплёнок, чесночный соус",
+        "en": "Whole chicken, garlic sauce"
+       },
+       "price": 68000,
+       "old_price": null,
+       "weight": "700 g",
+       "photo": "/img/chicken.jpg",
+       "order": 3
+      }
+     ]
+    },
+    {
+     "title": {
+      "uz": "Milliy taomlar",
+      "ru": "Национальные блюда",
+      "en": "Uzbek dishes"
+     },
+     "order": 3,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Choyxona oshi",
+        "ru": "Чайханский плов",
+        "en": "Teahouse plov"
+       },
+       "description": {
+        "uz": "Mol go'shti, qizil sabzi",
+        "ru": "Говядина, красная морковь",
+        "en": "Beef, red carrot"
+       },
+       "price": 38000,
+       "old_price": null,
+       "weight": "400 g",
+       "photo": "/img/plov2.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "To'y oshi",
+        "ru": "Свадебный плов",
+        "en": "Wedding plov"
+       },
+       "description": {
+        "uz": "Qo'y go'shti, sariq sabzi, no'xat, mayiz",
+        "ru": "Баранина, жёлтая морковь, нут, изюм",
+        "en": "Lamb, yellow carrot, chickpeas, raisins"
+       },
+       "price": 42000,
+       "old_price": null,
+       "weight": "400 g",
+       "photo": "/img/plov.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Manti",
+        "ru": "Манты",
+        "en": "Manti"
+       },
+       "description": {
+        "uz": "5 dona, qo'y go'shti va piyoz",
+        "ru": "5 штук, баранина и лук",
+        "en": "5 pieces, lamb and onion"
+       },
+       "price": 34000,
+       "old_price": null,
+       "weight": "350 g",
+       "photo": "/img/manti.jpg",
+       "order": 2
+      },
+      {
+       "name": {
+        "uz": "Dimlama",
+        "ru": "Димлама",
+        "en": "Dimlama"
+       },
+       "description": {
+        "uz": "Go'sht va mavsumiy sabzavotlar",
+        "ru": "Мясо и сезонные овощи",
+        "en": "Meat and seasonal vegetables"
+       },
+       "price": 46000,
+       "old_price": null,
+       "weight": "420 g",
+       "photo": "/img/dimlama.jpg",
+       "order": 3
+      },
+      {
+       "name": {
+        "uz": "Qovurma lag'mon",
+        "ru": "Жареный лагман",
+        "en": "Fried lagman"
+       },
+       "description": {
+        "uz": "Cho'zma ugra, go'sht, bulg'or qalampiri",
+        "ru": "Тянутая лапша, мясо, болгарский перец",
+        "en": "Hand-pulled noodles, meat, bell pepper"
+       },
+       "price": 36000,
+       "old_price": null,
+       "weight": "380 g",
+       "photo": "/img/lagman.jpg",
+       "order": 4
+      }
+     ]
+    },
+    {
+     "title": {
+      "uz": "Sho'rvalar",
+      "ru": "Супы",
+      "en": "Soups"
+     },
+     "order": 4,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Mastava",
+        "ru": "Мастава",
+        "en": "Mastava"
+       },
+       "description": {
+        "uz": "Guruchli, qatiq bilan",
+        "ru": "С рисом, подаётся с катыком",
+        "en": "Rice soup, served with yoghurt"
+       },
+       "price": 26000,
+       "old_price": null,
+       "weight": "400 ml",
+       "photo": "/img/mastava.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Chuchvara",
+        "ru": "Чучвара",
+        "en": "Chuchvara"
+       },
+       "description": {
+        "uz": "Sho'rvada, ko'katlar bilan",
+        "ru": "В бульоне, с зеленью",
+        "en": "In broth, with herbs"
+       },
+       "price": 30000,
+       "old_price": null,
+       "weight": "400 ml",
+       "photo": "/img/chuchvara.jpg",
+       "order": 1
+      }
+     ]
+    },
+    {
+     "title": {
+      "uz": "Non va salat",
+      "ru": "Хлеб и салаты",
+      "en": "Bread and salads"
+     },
+     "order": 5,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Tandir non",
+        "ru": "Тандырная лепёшка",
+        "en": "Tandoor bread"
+       },
+       "description": {
+        "uz": "Issiq, kunjutli",
+        "ru": "Горячая, с кунжутом",
+        "en": "Hot, with sesame"
+       },
+       "price": 5000,
+       "old_price": null,
+       "weight": "1 dona",
+       "photo": "/img/non.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Somsa",
+        "ru": "Самса",
+        "en": "Samsa"
+       },
+       "description": {
+        "uz": "Tandirda, go'shtli, 2 dona",
+        "ru": "Из тандыра, с мясом, 2 штуки",
+        "en": "Tandoor-baked, with meat, 2 pieces"
+       },
+       "price": 22000,
+       "old_price": null,
+       "weight": "220 g",
+       "photo": "/img/samsa.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Mavsumiy salat",
+        "ru": "Сезонный салат",
+        "en": "Seasonal salad"
+       },
+       "description": {
+        "uz": "Yangi sabzavotlar, zaytun moyi",
+        "ru": "Свежие овощи, оливковое масло",
+        "en": "Fresh vegetables, olive oil"
+       },
+       "price": 24000,
+       "old_price": null,
+       "weight": "220 g",
+       "photo": "/img/veggies.jpg",
+       "order": 2
+      }
+     ]
+    },
+    {
+     "title": {
+      "uz": "Ichimliklar",
+      "ru": "Напитки",
+      "en": "Drinks"
+     },
+     "order": 6,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Limonad",
+        "ru": "Лимонад",
+        "en": "Lemonade"
+       },
+       "description": {
+        "uz": "Uy usulida, limon va yalpiz bilan",
+        "ru": "Домашний, с лимоном и мятой",
+        "en": "Homemade, with lemon and mint"
+       },
+       "price": 16000,
+       "old_price": null,
+       "weight": "0.4 l",
+       "photo": "/img/lemonade.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Muzli choy",
+        "ru": "Холодный чай",
+        "en": "Iced tea"
+       },
+       "description": {
+        "uz": "Laym bilan, sovuq holda",
+        "ru": "С лаймом, охлаждённый",
+        "en": "With lime, served cold"
+       },
+       "price": 14000,
+       "old_price": null,
+       "weight": "0.4 l",
+       "photo": "/img/tea.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Suv",
+        "ru": "Вода",
+        "en": "Water"
+       },
+       "description": {
+        "uz": "Gazsiz",
+        "ru": "Без газа",
+        "en": "Still"
+       },
+       "price": 5000,
+       "old_price": null,
+       "weight": "0.5 l",
+       "photo": "/img/water.jpg",
+       "order": 2
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "forish",
+   "name": "Forish choyxona",
+   "categories": [
+    "choyxona",
+    "milliy"
+   ],
+   "rating": 4.7,
+   "reviews": 180,
+   "delivery_minutes": 35,
+   "distance_km": 3.2,
+   "discount_percent": 0,
+   "address": "Do'stlik tumani",
+   "hours": "09:00 – 23:00",
+   "cover": "/img/covers/forish.jpg",
+   "order": 2,
+   "sections": [
+    {
+     "title": {
+      "uz": "Aksiyalar",
+      "ru": "Акции",
+      "en": "Deals"
+     },
+     "order": 0,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Osh to'plami",
+        "ru": "Набор «Плов»",
+        "en": "Plov set"
+       },
+       "description": {
+        "uz": "Choyxona oshi, mavsumiy salat va tandir non",
+        "ru": "Чайханский плов, сезонный салат и тандырная лепёшка",
+        "en": "Teahouse plov, seasonal salad and tandoor bread"
+       },
+       "price": 55000,
+       "old_price": 67000,
+       "weight": "650 g",
+       "photo": "/img/plov2.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Kabob to'plami",
+        "ru": "Набор «Шашлык»",
+        "en": "Kebab set"
+       },
+       "description": {
+        "uz": "4 six qo'y go'shtli kabob, non va piyoz",
+        "ru": "4 шампура шашлыка из баранины, лепёшка и лук",
+        "en": "4 lamb kebab skewers, bread and onion"
+       },
+       "price": 79000,
+       "old_price": 93000,
+       "weight": "520 g",
+       "photo": "/img/shashlik.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Oilaviy assorti",
+        "ru": "Семейное ассорти",
+        "en": "Family platter"
+       },
+       "description": {
+        "uz": "4 kishilik go'shtli assorti aksiya narxida",
+        "ru": "Мясное ассорти на четверых по цене акции",
+        "en": "Meat platter for four at the deal price"
+       },
+       "price": 357000,
+       "old_price": 420000,
+       "weight": "1.4 kg",
+       "photo": "/img/kebab1.jpg",
+       "order": 2
+      },
+      {
+       "name": {
+        "uz": "Somsa 3+1",
+        "ru": "Самса 3+1",
+        "en": "Samsa 3+1"
+       },
+       "description": {
+        "uz": "4 dona tandir somsa — 3 tasining narxida",
+        "ru": "4 тандырные самсы по цене трёх",
+        "en": "4 tandoor samsas for the price of 3"
+       },
+       "price": 33000,
+       "old_price": 44000,
+       "weight": "440 g",
+       "photo": "/img/samsa.jpg",
+       "order": 3
+      }
+     ]
+    },
+    {
+     "title": {
+      "uz": "Assorti",
+      "ru": "Ассорти",
+      "en": "Platters"
+     },
+     "order": 1,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Go'shtli assorti",
+        "ru": "Мясное ассорти",
+        "en": "Meat platter"
+       },
+       "description": {
+        "uz": "4 kishilik, 5 xil go'sht va sabzavot",
+        "ru": "На четверых: 5 видов мяса и овощи",
+        "en": "For four: 5 kinds of meat and vegetables"
+       },
+       "price": 420000,
+       "old_price": null,
+       "weight": "1.4 kg",
+       "photo": "/img/kebab1.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Kabob assorti",
+        "ru": "Ассорти шашлыков",
+        "en": "Kebab platter"
+       },
+       "description": {
+        "uz": "5 six, piyoz bilan",
+        "ru": "5 шампуров, с луком",
+        "en": "5 skewers, with onion"
+       },
+       "price": 98000,
+       "old_price": null,
+       "weight": "500 g",
+       "photo": "/img/kabob.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Kichik assorti",
+        "ru": "Малое ассорти",
+        "en": "Small platter"
+       },
+       "description": {
+        "uz": "2 kishilik: qo'y kabob, tovuq kabob, qovurg'a",
+        "ru": "На двоих: шашлык из баранины и курицы, рёбрышки",
+        "en": "For two: lamb kebab, chicken kebab, ribs"
+       },
+       "price": 210000,
+       "old_price": null,
+       "weight": "750 g",
+       "photo": "/img/ribs.jpg",
+       "order": 2
+      },
+      {
+       "name": {
+        "uz": "Tovuq assorti",
+        "ru": "Куриное ассорти",
+        "en": "Chicken platter"
+       },
+       "description": {
+        "uz": "Tabaka jo'ja va 2 six tovuq kabob",
+        "ru": "Цыплёнок табака и 2 шампура куриного шашлыка",
+        "en": "Chicken tabaka and 2 chicken kebab skewers"
+       },
+       "price": 96000,
+       "old_price": null,
+       "weight": "900 g",
+       "photo": "/img/chicken.jpg",
+       "order": 3
+      },
+      {
+       "name": {
+        "uz": "Milliy assorti",
+        "ru": "Национальное ассорти",
+        "en": "Uzbek platter"
+       },
+       "description": {
+        "uz": "4 kishilik: osh, manti va somsa",
+        "ru": "На четверых: плов, манты и самса",
+        "en": "For four: plov, manti and samsa"
+       },
+       "price": 168000,
+       "old_price": null,
+       "weight": "1.6 kg",
+       "photo": "/img/plov.jpg",
+       "order": 4
+      }
+     ]
+    },
+    {
+     "title": {
+      "uz": "Kabob va go'sht",
+      "ru": "Шашлык и мясо",
+      "en": "Kebabs and meat"
+     },
+     "order": 2,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Qo'y go'shtli kabob",
+        "ru": "Шашлык из баранины",
+        "en": "Lamb kebab"
+       },
+       "description": {
+        "uz": "2 six",
+        "ru": "2 шампура",
+        "en": "2 skewers"
+       },
+       "price": 44000,
+       "old_price": null,
+       "weight": "200 g",
+       "photo": "/img/shashlik.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Tovuq kabob",
+        "ru": "Куриный шашлык",
+        "en": "Chicken kebab"
+       },
+       "description": {
+        "uz": "2 six",
+        "ru": "2 шампура",
+        "en": "2 skewers"
+       },
+       "price": 32000,
+       "old_price": null,
+       "weight": "220 g",
+       "photo": "/img/tovuqkabob.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Qovurg'a",
+        "ru": "Рёбрышки",
+        "en": "Ribs"
+       },
+       "description": {
+        "uz": "Olovda pishirilgan, kartoshka bilan",
+        "ru": "Приготовлены на огне, с картофелем",
+        "en": "Flame-grilled, with potatoes"
+       },
+       "price": 145000,
+       "old_price": null,
+       "weight": "450 g",
+       "photo": "/img/ribs.jpg",
+       "order": 2
+      },
+      {
+       "name": {
+        "uz": "Tabaka jo'ja",
+        "ru": "Цыплёнок табака",
+        "en": "Chicken tabaka"
+       },
+       "description": {
+        "uz": "Butun jo'ja, sarimsoqli sous",
+        "ru": "Целый цыплёнок, чесночный соус",
+        "en": "Whole chicken, garlic sauce"
+       },
+       "price": 68000,
+       "old_price": null,
+       "weight": "700 g",
+       "photo": "/img/chicken.jpg",
+       "order": 3
+      }
+     ]
+    },
+    {
+     "title": {
+      "uz": "Milliy taomlar",
+      "ru": "Национальные блюда",
+      "en": "Uzbek dishes"
+     },
+     "order": 3,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Choyxona oshi",
+        "ru": "Чайханский плов",
+        "en": "Teahouse plov"
+       },
+       "description": {
+        "uz": "Mol go'shti, qizil sabzi",
+        "ru": "Говядина, красная морковь",
+        "en": "Beef, red carrot"
+       },
+       "price": 38000,
+       "old_price": null,
+       "weight": "400 g",
+       "photo": "/img/plov2.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "To'y oshi",
+        "ru": "Свадебный плов",
+        "en": "Wedding plov"
+       },
+       "description": {
+        "uz": "Qo'y go'shti, sariq sabzi, no'xat, mayiz",
+        "ru": "Баранина, жёлтая морковь, нут, изюм",
+        "en": "Lamb, yellow carrot, chickpeas, raisins"
+       },
+       "price": 42000,
+       "old_price": null,
+       "weight": "400 g",
+       "photo": "/img/plov.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Manti",
+        "ru": "Манты",
+        "en": "Manti"
+       },
+       "description": {
+        "uz": "5 dona, qo'y go'shti va piyoz",
+        "ru": "5 штук, баранина и лук",
+        "en": "5 pieces, lamb and onion"
+       },
+       "price": 34000,
+       "old_price": null,
+       "weight": "350 g",
+       "photo": "/img/manti.jpg",
+       "order": 2
+      },
+      {
+       "name": {
+        "uz": "Dimlama",
+        "ru": "Димлама",
+        "en": "Dimlama"
+       },
+       "description": {
+        "uz": "Go'sht va mavsumiy sabzavotlar",
+        "ru": "Мясо и сезонные овощи",
+        "en": "Meat and seasonal vegetables"
+       },
+       "price": 46000,
+       "old_price": null,
+       "weight": "420 g",
+       "photo": "/img/dimlama.jpg",
+       "order": 3
+      },
+      {
+       "name": {
+        "uz": "Qovurma lag'mon",
+        "ru": "Жареный лагман",
+        "en": "Fried lagman"
+       },
+       "description": {
+        "uz": "Cho'zma ugra, go'sht, bulg'or qalampiri",
+        "ru": "Тянутая лапша, мясо, болгарский перец",
+        "en": "Hand-pulled noodles, meat, bell pepper"
+       },
+       "price": 36000,
+       "old_price": null,
+       "weight": "380 g",
+       "photo": "/img/lagman.jpg",
+       "order": 4
+      }
+     ]
+    },
+    {
+     "title": {
+      "uz": "Sho'rvalar",
+      "ru": "Супы",
+      "en": "Soups"
+     },
+     "order": 4,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Mastava",
+        "ru": "Мастава",
+        "en": "Mastava"
+       },
+       "description": {
+        "uz": "Guruchli, qatiq bilan",
+        "ru": "С рисом, подаётся с катыком",
+        "en": "Rice soup, served with yoghurt"
+       },
+       "price": 26000,
+       "old_price": null,
+       "weight": "400 ml",
+       "photo": "/img/mastava.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Chuchvara",
+        "ru": "Чучвара",
+        "en": "Chuchvara"
+       },
+       "description": {
+        "uz": "Sho'rvada, ko'katlar bilan",
+        "ru": "В бульоне, с зеленью",
+        "en": "In broth, with herbs"
+       },
+       "price": 30000,
+       "old_price": null,
+       "weight": "400 ml",
+       "photo": "/img/chuchvara.jpg",
+       "order": 1
+      }
+     ]
+    },
+    {
+     "title": {
+      "uz": "Non va salat",
+      "ru": "Хлеб и салаты",
+      "en": "Bread and salads"
+     },
+     "order": 5,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Tandir non",
+        "ru": "Тандырная лепёшка",
+        "en": "Tandoor bread"
+       },
+       "description": {
+        "uz": "Issiq, kunjutli",
+        "ru": "Горячая, с кунжутом",
+        "en": "Hot, with sesame"
+       },
+       "price": 5000,
+       "old_price": null,
+       "weight": "1 dona",
+       "photo": "/img/non.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Somsa",
+        "ru": "Самса",
+        "en": "Samsa"
+       },
+       "description": {
+        "uz": "Tandirda, go'shtli, 2 dona",
+        "ru": "Из тандыра, с мясом, 2 штуки",
+        "en": "Tandoor-baked, with meat, 2 pieces"
+       },
+       "price": 22000,
+       "old_price": null,
+       "weight": "220 g",
+       "photo": "/img/samsa.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Mavsumiy salat",
+        "ru": "Сезонный салат",
+        "en": "Seasonal salad"
+       },
+       "description": {
+        "uz": "Yangi sabzavotlar, zaytun moyi",
+        "ru": "Свежие овощи, оливковое масло",
+        "en": "Fresh vegetables, olive oil"
+       },
+       "price": 24000,
+       "old_price": null,
+       "weight": "220 g",
+       "photo": "/img/veggies.jpg",
+       "order": 2
+      }
+     ]
+    },
+    {
+     "title": {
+      "uz": "Ichimliklar",
+      "ru": "Напитки",
+      "en": "Drinks"
+     },
+     "order": 6,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Limonad",
+        "ru": "Лимонад",
+        "en": "Lemonade"
+       },
+       "description": {
+        "uz": "Uy usulida, limon va yalpiz bilan",
+        "ru": "Домашний, с лимоном и мятой",
+        "en": "Homemade, with lemon and mint"
+       },
+       "price": 16000,
+       "old_price": null,
+       "weight": "0.4 l",
+       "photo": "/img/lemonade.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Muzli choy",
+        "ru": "Холодный чай",
+        "en": "Iced tea"
+       },
+       "description": {
+        "uz": "Laym bilan, sovuq holda",
+        "ru": "С лаймом, охлаждённый",
+        "en": "With lime, served cold"
+       },
+       "price": 14000,
+       "old_price": null,
+       "weight": "0.4 l",
+       "photo": "/img/tea.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Suv",
+        "ru": "Вода",
+        "en": "Water"
+       },
+       "description": {
+        "uz": "Gazsiz",
+        "ru": "Без газа",
+        "en": "Still"
+       },
+       "price": 5000,
+       "old_price": null,
+       "weight": "0.5 l",
+       "photo": "/img/water.jpg",
+       "order": 2
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "pitsa-uyi",
+   "name": "Pitsa Uyi",
+   "categories": [
+    "pizza",
+    "pasta"
+   ],
+   "rating": 4.7,
+   "reviews": 1628,
+   "delivery_minutes": 15,
+   "distance_km": 0.92,
+   "discount_percent": 0,
+   "address": "Do'stlik sh., Amir Temur ko'chasi, 12",
+   "hours": "10:00 – 23:00",
+   "cover": "/img/covers/pitsa-uyi.jpg",
+   "order": 3,
+   "sections": [
+    {
+     "title": {
+      "uz": "Pitsa",
+      "ru": "Пицца",
+      "en": "Pizza"
+     },
+     "order": 0,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Margarita",
+        "ru": "Маргарита",
+        "en": "Margherita"
+       },
+       "description": {
+        "uz": "Pomidor sousi, mozzarella, yangi rayhon",
+        "ru": "Томатный соус, моцарелла, свежий базилик",
+        "en": "Tomato sauce, mozzarella, fresh basil"
+       },
+       "price": 62000,
+       "old_price": null,
+       "weight": "480 g",
+       "photo": "/img/pizza3.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Pepperoni",
+        "ru": "Пепперони",
+        "en": "Pepperoni"
+       },
+       "description": {
+        "uz": "Achchiq pepperoni, mozzarella, pomidor sousi",
+        "ru": "Острая пепперони, моцарелла, томатный соус",
+        "en": "Spicy pepperoni, mozzarella, tomato sauce"
+       },
+       "price": 74000,
+       "old_price": null,
+       "weight": "520 g",
+       "photo": "/img/pizza4.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Tovuqli",
+        "ru": "С курицей",
+        "en": "Chicken"
+       },
+       "description": {
+        "uz": "Tovuq filesi, qizil piyoz, mozzarella",
+        "ru": "Куриное филе, красный лук, моцарелла",
+        "en": "Chicken fillet, red onion, mozzarella"
+       },
+       "price": 72000,
+       "old_price": null,
+       "weight": "540 g",
+       "photo": "/img/pizza2.jpg",
+       "order": 2
+      },
+      {
+       "name": {
+        "uz": "To'rt xil pishloq",
+        "ru": "Четыре сыра",
+        "en": "Four cheese"
+       },
+       "description": {
+        "uz": "Mozzarella, parmezan, dorblu, cheddar",
+        "ru": "Моцарелла, пармезан, дорблю, чеддер",
+        "en": "Mozzarella, parmesan, blue cheese, cheddar"
+       },
+       "price": 82000,
+       "old_price": null,
+       "weight": "500 g",
+       "photo": "/img/pizza1.jpg",
+       "order": 3
+      },
+      {
+       "name": {
+        "uz": "Rikotta va ismaloq",
+        "ru": "Рикотта и шпинат",
+        "en": "Ricotta and spinach"
+       },
+       "description": {
+        "uz": "Yangi ismaloq, rikotta, sarimsoq moyi",
+        "ru": "Свежий шпинат, рикотта, чесночное масло",
+        "en": "Fresh spinach, ricotta, garlic oil"
+       },
+       "price": 78000,
+       "old_price": null,
+       "weight": "490 g",
+       "photo": "/img/pizza6.jpg",
+       "order": 4
+      },
+      {
+       "name": {
+        "uz": "Neapolitana",
+        "ru": "Неаполитанская",
+        "en": "Neapolitan"
+       },
+       "description": {
+        "uz": "O'tinli pechda, yupqa xamirda",
+        "ru": "Из дровяной печи, на тонком тесте",
+        "en": "Wood-fired, on a thin crust"
+       },
+       "price": 69000,
+       "old_price": null,
+       "weight": "460 g",
+       "photo": "/img/pizza5.jpg",
+       "order": 5
+      }
+     ]
+    },
+    {
+     "title": {
+      "uz": "Pasta",
+      "ru": "Паста",
+      "en": "Pasta"
+     },
+     "order": 1,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Karbonara",
+        "ru": "Карбонара",
+        "en": "Carbonara"
+       },
+       "description": {
+        "uz": "Qaymoqli sous, bekon, parmezan",
+        "ru": "Сливочный соус, бекон, пармезан",
+        "en": "Cream sauce, bacon, parmesan"
+       },
+       "price": 48000,
+       "old_price": null,
+       "weight": "320 g",
+       "photo": "/img/pasta3.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Penne bolonyeze",
+        "ru": "Пенне болоньезе",
+        "en": "Penne bolognese"
+       },
+       "description": {
+        "uz": "Mol go'shtli pomidor sousi",
+        "ru": "Томатный соус с говядиной",
+        "en": "Tomato sauce with beef"
+       },
+       "price": 46000,
+       "old_price": null,
+       "weight": "340 g",
+       "photo": "/img/pasta1.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Dengiz mahsulotli",
+        "ru": "С морепродуктами",
+        "en": "Seafood"
+       },
+       "description": {
+        "uz": "Krevetka, pomidor, sarimsoq",
+        "ru": "Креветки, томаты, чеснок",
+        "en": "Shrimp, tomato, garlic"
+       },
+       "price": 64000,
+       "old_price": null,
+       "weight": "350 g",
+       "photo": "/img/pasta2.jpg",
+       "order": 2
+      }
+     ]
+    },
+    {
+     "title": {
+      "uz": "Gazak va salatlar",
+      "ru": "Закуски и салаты",
+      "en": "Starters and salads"
+     },
+     "order": 2,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Sezar",
+        "ru": "Цезарь",
+        "en": "Caesar"
+       },
+       "description": {
+        "uz": "Tovuq, parmezan, kruton, sezar sousi",
+        "ru": "Курица, пармезан, крутоны, соус цезарь",
+        "en": "Chicken, parmesan, croutons, Caesar dressing"
+       },
+       "price": 44000,
+       "old_price": null,
+       "weight": "250 g",
+       "photo": "/img/salad4.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Tovuq qanotchalari",
+        "ru": "Куриные крылышки",
+        "en": "Chicken wings"
+       },
+       "description": {
+        "uz": "8 dona, achchiq-shirin sousda",
+        "ru": "8 штук, в кисло-сладком соусе",
+        "en": "8 pieces, in sweet-and-spicy sauce"
+       },
+       "price": 44000,
+       "old_price": null,
+       "weight": "300 g",
+       "photo": "/img/wings1.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Kartoshka fri",
+        "ru": "Картофель фри",
+        "en": "French fries"
+       },
+       "description": {
+        "uz": "Tuzlangan, qarsildoq",
+        "ru": "Солёный, хрустящий",
+        "en": "Salted, crispy"
+       },
+       "price": 18000,
+       "old_price": null,
+       "weight": "150 g",
+       "photo": "/img/fries2.jpg",
+       "order": 2
+      }
+     ]
+    },
+    {
+     "title": {
+      "uz": "Shirinliklar",
+      "ru": "Десерты",
+      "en": "Desserts"
+     },
+     "order": 3,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Shokoladli pechenye",
+        "ru": "Шоколадное печенье",
+        "en": "Chocolate cookie"
+       },
+       "description": {
+        "uz": "Katta, issiq holda beriladi",
+        "ru": "Большое, подаётся тёплым",
+        "en": "Large, served warm"
+       },
+       "price": 22000,
+       "old_price": null,
+       "weight": "120 g",
+       "photo": "/img/cookie.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Chizkeyk",
+        "ru": "Чизкейк",
+        "en": "Cheesecake"
+       },
+       "description": {
+        "uz": "Qora smorodina sousi bilan",
+        "ru": "С соусом из чёрной смородины",
+        "en": "With blackcurrant sauce"
+       },
+       "price": 28000,
+       "old_price": null,
+       "weight": "130 g",
+       "photo": "/img/cheesecake.jpg",
+       "order": 1
+      }
+     ]
+    },
+    {
+     "title": {
+      "uz": "Ichimliklar",
+      "ru": "Напитки",
+      "en": "Drinks"
+     },
+     "order": 4,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Limonad",
+        "ru": "Лимонад",
+        "en": "Lemonade"
+       },
+       "description": {
+        "uz": "Uy usulida, limon va yalpiz bilan",
+        "ru": "Домашний, с лимоном и мятой",
+        "en": "Homemade, with lemon and mint"
+       },
+       "price": 16000,
+       "old_price": null,
+       "weight": "0.4 l",
+       "photo": "/img/lemonade.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Muzli choy",
+        "ru": "Холодный чай",
+        "en": "Iced tea"
+       },
+       "description": {
+        "uz": "Laym bilan, sovuq holda",
+        "ru": "С лаймом, охлаждённый",
+        "en": "With lime, served cold"
+       },
+       "price": 14000,
+       "old_price": null,
+       "weight": "0.4 l",
+       "photo": "/img/tea.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Suv",
+        "ru": "Вода",
+        "en": "Water"
+       },
+       "description": {
+        "uz": "Gazsiz",
+        "ru": "Без газа",
+        "en": "Still"
+       },
+       "price": 5000,
+       "old_price": null,
+       "weight": "0.5 l",
+       "photo": "/img/water.jpg",
+       "order": 2
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "gosht",
+   "name": "Go'sht",
+   "categories": [
+    "gosht"
+   ],
+   "rating": 4.7,
+   "reviews": 904,
+   "delivery_minutes": 25,
+   "distance_km": 0.71,
+   "discount_percent": 0,
+   "address": "Do'stlik sh., Mustaqillik ko'chasi, 45",
+   "hours": "12:00 – 00:00",
+   "cover": "/img/covers/gosht.jpg",
+   "order": 4,
+   "sections": [
+    {
+     "title": {
+      "uz": "Steyklar",
+      "ru": "Стейки",
+      "en": "Steaks"
+     },
+     "order": 0,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Ribay",
+        "ru": "Рибай",
+        "en": "Ribeye"
+       },
+       "description": {
+        "uz": "Marmar mol go'shti, o'rtacha pishirilgan",
+        "ru": "Мраморная говядина, средняя прожарка",
+        "en": "Marbled beef, cooked medium"
+       },
+       "price": 189000,
+       "old_price": null,
+       "weight": "300 g",
+       "photo": "/img/steak3.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Steyk va fri",
+        "ru": "Стейк с картофелем фри",
+        "en": "Steak and fries"
+       },
+       "description": {
+        "uz": "Mol go'shti, kartoshka fri",
+        "ru": "Говядина, картофель фри",
+        "en": "Beef, French fries"
+       },
+       "price": 148000,
+       "old_price": null,
+       "weight": "380 g",
+       "photo": "/img/steak1.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Brisket",
+        "ru": "Брискет",
+        "en": "Brisket"
+       },
+       "description": {
+        "uz": "12 soat dudlangan mol to'shi",
+        "ru": "Говяжья грудинка, копчёная 12 часов",
+        "en": "Beef brisket smoked for 12 hours"
+       },
+       "price": 165000,
+       "old_price": null,
+       "weight": "280 g",
+       "photo": "/img/bbq.jpg",
+       "order": 2
+      },
+      {
+       "name": {
+        "uz": "Qovurg'a BBQ",
+        "ru": "Рёбрышки BBQ",
+        "en": "BBQ ribs"
+       },
+       "description": {
+        "uz": "BBQ sousida, kartoshka bilan",
+        "ru": "В соусе BBQ, с картофелем",
+        "en": "In BBQ sauce, with potatoes"
+       },
+       "price": 145000,
+       "old_price": null,
+       "weight": "450 g",
+       "photo": "/img/ribs.jpg",
+       "order": 3
+      }
+     ]
+    },
+    {
+     "title": {
+      "uz": "Assorti",
+      "ru": "Ассорти",
+      "en": "Platters"
+     },
+     "order": 1,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Go'shtli assorti",
+        "ru": "Мясное ассорти",
+        "en": "Meat platter"
+       },
+       "description": {
+        "uz": "4 kishilik, 5 xil go'sht va sabzavot",
+        "ru": "На четверых: 5 видов мяса и овощи",
+        "en": "For four: 5 kinds of meat and vegetables"
+       },
+       "price": 420000,
+       "old_price": null,
+       "weight": "1.4 kg",
+       "photo": "/img/kebab1.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Kabob assorti",
+        "ru": "Ассорти шашлыков",
+        "en": "Kebab platter"
+       },
+       "description": {
+        "uz": "5 six, piyoz bilan",
+        "ru": "5 шампуров, с луком",
+        "en": "5 skewers, with onion"
+       },
+       "price": 98000,
+       "old_price": null,
+       "weight": "500 g",
+       "photo": "/img/kabob.jpg",
+       "order": 1
+      }
+     ]
+    },
+    {
+     "title": {
+      "uz": "Garnirlar",
+      "ru": "Гарниры",
+      "en": "Sides"
+     },
+     "order": 2,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Mavsumiy salat",
+        "ru": "Сезонный салат",
+        "en": "Seasonal salad"
+       },
+       "description": {
+        "uz": "Yangi sabzavotlar, zaytun moyi",
+        "ru": "Свежие овощи, оливковое масло",
+        "en": "Fresh vegetables, olive oil"
+       },
+       "price": 24000,
+       "old_price": null,
+       "weight": "220 g",
+       "photo": "/img/veggies.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Kartoshka fri",
+        "ru": "Картофель фри",
+        "en": "French fries"
+       },
+       "description": {
+        "uz": "Tuzlangan, qarsildoq",
+        "ru": "Солёный, хрустящий",
+        "en": "Salted, crispy"
+       },
+       "price": 18000,
+       "old_price": null,
+       "weight": "150 g",
+       "photo": "/img/fries2.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Hunarmand noni",
+        "ru": "Ремесленный хлеб",
+        "en": "Artisan bread"
+       },
+       "description": {
+        "uz": "Javdar unidan",
+        "ru": "Из ржаной муки",
+        "en": "Made with rye flour"
+       },
+       "price": 12000,
+       "old_price": null,
+       "weight": "250 g",
+       "photo": "/img/bread.jpg",
+       "order": 2
+      }
+     ]
+    },
+    {
+     "title": {
+      "uz": "Ichimliklar",
+      "ru": "Напитки",
+      "en": "Drinks"
+     },
+     "order": 3,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Limonad",
+        "ru": "Лимонад",
+        "en": "Lemonade"
+       },
+       "description": {
+        "uz": "Uy usulida, limon va yalpiz bilan",
+        "ru": "Домашний, с лимоном и мятой",
+        "en": "Homemade, with lemon and mint"
+       },
+       "price": 16000,
+       "old_price": null,
+       "weight": "0.4 l",
+       "photo": "/img/lemonade.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Muzli choy",
+        "ru": "Холодный чай",
+        "en": "Iced tea"
+       },
+       "description": {
+        "uz": "Laym bilan, sovuq holda",
+        "ru": "С лаймом, охлаждённый",
+        "en": "With lime, served cold"
+       },
+       "price": 14000,
+       "old_price": null,
+       "weight": "0.4 l",
+       "photo": "/img/tea.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Suv",
+        "ru": "Вода",
+        "en": "Water"
+       },
+       "description": {
+        "uz": "Gazsiz",
+        "ru": "Без газа",
+        "en": "Still"
+       },
+       "price": 5000,
+       "old_price": null,
+       "weight": "0.5 l",
+       "photo": "/img/water.jpg",
+       "order": 2
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "bufet-17",
+   "name": "Bufet 17",
+   "categories": [
+    "nonushta",
+    "shirinlik"
+   ],
+   "rating": 4.8,
+   "reviews": 512,
+   "delivery_minutes": 30,
+   "distance_km": 1.7,
+   "discount_percent": 20,
+   "address": "Do'stlik sh., Bog'ishamol ko'chasi, 17",
+   "hours": "08:00 – 22:00",
+   "cover": "/img/covers/bufet-17.jpg",
+   "order": 5,
+   "sections": [
+    {
+     "title": {
+      "uz": "Nonushta",
+      "ru": "Завтраки",
+      "en": "Breakfast"
+     },
+     "order": 0,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Kruassan",
+        "ru": "Круассан",
+        "en": "Croissant"
+       },
+       "description": {
+        "uz": "Sariyog'li, yangi yopilgan",
+        "ru": "Сливочный, свежей выпечки",
+        "en": "Buttery, freshly baked"
+       },
+       "price": 18000,
+       "old_price": null,
+       "weight": "80 g",
+       "photo": "/img/croissant.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Pankeyk",
+        "ru": "Панкейки",
+        "en": "Pancakes"
+       },
+       "description": {
+        "uz": "Banan va chernika bilan",
+        "ru": "С бананом и черникой",
+        "en": "With banana and blueberries"
+       },
+       "price": 34000,
+       "old_price": null,
+       "weight": "240 g",
+       "photo": "/img/pancakes2.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Asalli pankeyk",
+        "ru": "Панкейки с мёдом",
+        "en": "Honey pancakes"
+       },
+       "description": {
+        "uz": "Asal va yalpiz bilan",
+        "ru": "С мёдом и мятой",
+        "en": "With honey and mint"
+       },
+       "price": 32000,
+       "old_price": null,
+       "weight": "220 g",
+       "photo": "/img/pancakes1.jpg",
+       "order": 2
+      },
+      {
+       "name": {
+        "uz": "Tuxumli tost",
+        "ru": "Тост с яйцом",
+        "en": "Egg toast"
+       },
+       "description": {
+        "uz": "Avokado pastasi, qovurilgan tuxum",
+        "ru": "Паста из авокадо, яичница",
+        "en": "Avocado spread, fried egg"
+       },
+       "price": 36000,
+       "old_price": null,
+       "weight": "200 g",
+       "photo": "/img/eggs.jpg",
+       "order": 3
+      },
+      {
+       "name": {
+        "uz": "Avokado tost",
+        "ru": "Авокадо-тост",
+        "en": "Avocado toast"
+       },
+       "description": {
+        "uz": "Qaynatilgan tuxum bilan",
+        "ru": "С варёным яйцом",
+        "en": "With a boiled egg"
+       },
+       "price": 42000,
+       "old_price": null,
+       "weight": "210 g",
+       "photo": "/img/avotoast.jpg",
+       "order": 4
+      },
+      {
+       "name": {
+        "uz": "Inglizcha nonushta",
+        "ru": "Английский завтрак",
+        "en": "English breakfast"
+       },
+       "description": {
+        "uz": "Tuxum, tost, pomidor",
+        "ru": "Яйцо, тосты, томаты",
+        "en": "Egg, toast, tomato"
+       },
+       "price": 46000,
+       "old_price": null,
+       "weight": "320 g",
+       "photo": "/img/breakfast.jpg",
+       "order": 5
+      }
+     ]
+    },
+    {
+     "title": {
+      "uz": "Salatlar",
+      "ru": "Салаты",
+      "en": "Salads"
+     },
+     "order": 1,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Sezar",
+        "ru": "Цезарь",
+        "en": "Caesar"
+       },
+       "description": {
+        "uz": "Tovuq, parmezan, kruton",
+        "ru": "Курица, пармезан, крутоны",
+        "en": "Chicken, parmesan, croutons"
+       },
+       "price": 44000,
+       "old_price": null,
+       "weight": "250 g",
+       "photo": "/img/salad4.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Grek salati",
+        "ru": "Греческий салат",
+        "en": "Greek salad"
+       },
+       "description": {
+        "uz": "Feta, zaytun, sabzavotlar",
+        "ru": "Фета, оливки, овощи",
+        "en": "Feta, olives, vegetables"
+       },
+       "price": 38000,
+       "old_price": null,
+       "weight": "240 g",
+       "photo": "/img/salad3.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Tovuqli boul",
+        "ru": "Боул с курицей",
+        "en": "Chicken bowl"
+       },
+       "description": {
+        "uz": "Tovuq, makkajo'xori, sabzavotlar",
+        "ru": "Курица, кукуруза, овощи",
+        "en": "Chicken, sweetcorn, vegetables"
+       },
+       "price": 46000,
+       "old_price": null,
+       "weight": "320 g",
+       "photo": "/img/salad2.jpg",
+       "order": 2
+      },
+      {
+       "name": {
+        "uz": "Sabzavotli boul",
+        "ru": "Овощной боул",
+        "en": "Veggie bowl"
+       },
+       "description": {
+        "uz": "Avokado, no'xat, pomidor",
+        "ru": "Авокадо, нут, томаты",
+        "en": "Avocado, chickpeas, tomato"
+       },
+       "price": 42000,
+       "old_price": null,
+       "weight": "300 g",
+       "photo": "/img/salad1.jpg",
+       "order": 3
+      }
+     ]
+    },
+    {
+     "title": {
+      "uz": "Shirinliklar",
+      "ru": "Десерты",
+      "en": "Desserts"
+     },
+     "order": 2,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Tiramisu",
+        "ru": "Тирамису",
+        "en": "Tiramisu"
+       },
+       "description": {
+        "uz": "Italyancha klassika",
+        "ru": "Итальянская классика",
+        "en": "An Italian classic"
+       },
+       "price": 34000,
+       "old_price": null,
+       "weight": "140 g",
+       "photo": "/img/tiramisu.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Malinali tort",
+        "ru": "Малиновый торт",
+        "en": "Raspberry cake"
+       },
+       "description": {
+        "uz": "Yengil krem, yangi malina",
+        "ru": "Лёгкий крем, свежая малина",
+        "en": "Light cream, fresh raspberries"
+       },
+       "price": 32000,
+       "old_price": null,
+       "weight": "140 g",
+       "photo": "/img/cake1.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Shokoladli tort",
+        "ru": "Шоколадный торт",
+        "en": "Chocolate cake"
+       },
+       "description": {
+        "uz": "Quyuq shokoladli krem",
+        "ru": "Густой шоколадный крем",
+        "en": "Rich chocolate cream"
+       },
+       "price": 34000,
+       "old_price": null,
+       "weight": "150 g",
+       "photo": "/img/cake2.jpg",
+       "order": 2
+      },
+      {
+       "name": {
+        "uz": "Makarun",
+        "ru": "Макаруны",
+        "en": "Macarons"
+       },
+       "description": {
+        "uz": "4 dona",
+        "ru": "4 штуки",
+        "en": "4 pieces"
+       },
+       "price": 36000,
+       "old_price": null,
+       "weight": "80 g",
+       "photo": "/img/macarons.jpg",
+       "order": 3
+      },
+      {
+       "name": {
+        "uz": "Donat",
+        "ru": "Донат",
+        "en": "Doughnut"
+       },
+       "description": {
+        "uz": "Shokoladli glazur bilan",
+        "ru": "С шоколадной глазурью",
+        "en": "With chocolate glaze"
+       },
+       "price": 16000,
+       "old_price": null,
+       "weight": "90 g",
+       "photo": "/img/donuts.jpg",
+       "order": 4
+      }
+     ]
+    },
+    {
+     "title": {
+      "uz": "Qahva va ichimliklar",
+      "ru": "Кофе и напитки",
+      "en": "Coffee and drinks"
+     },
+     "order": 3,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Kapuchino",
+        "ru": "Капучино",
+        "en": "Cappuccino"
+       },
+       "description": {
+        "uz": "Arabika 100%",
+        "ru": "Арабика 100%",
+        "en": "100% arabica"
+       },
+       "price": 24000,
+       "old_price": null,
+       "weight": "0.3 l",
+       "photo": "/img/coffee1.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Latte",
+        "ru": "Латте",
+        "en": "Latte"
+       },
+       "description": {
+        "uz": "Sirop tanlovi bilan",
+        "ru": "С сиропом на выбор",
+        "en": "With your choice of syrup"
+       },
+       "price": 26000,
+       "old_price": null,
+       "weight": "0.35 l",
+       "photo": "/img/latte.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Ays-latte",
+        "ru": "Айс-латте",
+        "en": "Iced latte"
+       },
+       "description": {
+        "uz": "Muz bilan",
+        "ru": "Со льдом",
+        "en": "With ice"
+       },
+       "price": 28000,
+       "old_price": null,
+       "weight": "0.4 l",
+       "photo": "/img/coffee3.jpg",
+       "order": 2
+      },
+      {
+       "name": {
+        "uz": "Mevali smuzi",
+        "ru": "Фруктовый смузи",
+        "en": "Fruit smoothie"
+       },
+       "description": {
+        "uz": "Banan, qulupnay",
+        "ru": "Банан, клубника",
+        "en": "Banana, strawberry"
+       },
+       "price": 30000,
+       "old_price": null,
+       "weight": "0.4 l",
+       "photo": "/img/smoothie.jpg",
+       "order": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "roni-pitsa",
+   "name": "Roni Pitsa",
+   "categories": [
+    "pizza",
+    "pasta"
+   ],
+   "rating": 4.7,
+   "reviews": 733,
+   "delivery_minutes": 25,
+   "distance_km": 0.44,
+   "discount_percent": 0,
+   "address": "Do'stlik sh., Bobur ko'chasi, 8",
+   "hours": "11:00 – 23:00",
+   "cover": "/img/covers/roni-pitsa.jpg",
+   "order": 6,
+   "sections": [
+    {
+     "title": {
+      "uz": "Pitsa",
+      "ru": "Пицца",
+      "en": "Pizza"
+     },
+     "order": 0,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Margarita",
+        "ru": "Маргарита",
+        "en": "Margherita"
+       },
+       "description": {
+        "uz": "Pomidor sousi, mozzarella, yangi rayhon",
+        "ru": "Томатный соус, моцарелла, свежий базилик",
+        "en": "Tomato sauce, mozzarella, fresh basil"
+       },
+       "price": 62000,
+       "old_price": null,
+       "weight": "480 g",
+       "photo": "/img/pizza3.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Pepperoni",
+        "ru": "Пепперони",
+        "en": "Pepperoni"
+       },
+       "description": {
+        "uz": "Achchiq pepperoni, mozzarella, pomidor sousi",
+        "ru": "Острая пепперони, моцарелла, томатный соус",
+        "en": "Spicy pepperoni, mozzarella, tomato sauce"
+       },
+       "price": 74000,
+       "old_price": null,
+       "weight": "520 g",
+       "photo": "/img/pizza4.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Tovuqli",
+        "ru": "С курицей",
+        "en": "Chicken"
+       },
+       "description": {
+        "uz": "Tovuq filesi, qizil piyoz, mozzarella",
+        "ru": "Куриное филе, красный лук, моцарелла",
+        "en": "Chicken fillet, red onion, mozzarella"
+       },
+       "price": 72000,
+       "old_price": null,
+       "weight": "540 g",
+       "photo": "/img/pizza2.jpg",
+       "order": 2
+      },
+      {
+       "name": {
+        "uz": "To'rt xil pishloq",
+        "ru": "Четыре сыра",
+        "en": "Four cheese"
+       },
+       "description": {
+        "uz": "Mozzarella, parmezan, dorblu, cheddar",
+        "ru": "Моцарелла, пармезан, дорблю, чеддер",
+        "en": "Mozzarella, parmesan, blue cheese, cheddar"
+       },
+       "price": 82000,
+       "old_price": null,
+       "weight": "500 g",
+       "photo": "/img/pizza1.jpg",
+       "order": 3
+      },
+      {
+       "name": {
+        "uz": "Rikotta va ismaloq",
+        "ru": "Рикотта и шпинат",
+        "en": "Ricotta and spinach"
+       },
+       "description": {
+        "uz": "Yangi ismaloq, rikotta, sarimsoq moyi",
+        "ru": "Свежий шпинат, рикотта, чесночное масло",
+        "en": "Fresh spinach, ricotta, garlic oil"
+       },
+       "price": 78000,
+       "old_price": null,
+       "weight": "490 g",
+       "photo": "/img/pizza6.jpg",
+       "order": 4
+      },
+      {
+       "name": {
+        "uz": "Neapolitana",
+        "ru": "Неаполитанская",
+        "en": "Neapolitan"
+       },
+       "description": {
+        "uz": "O'tinli pechda, yupqa xamirda",
+        "ru": "Из дровяной печи, на тонком тесте",
+        "en": "Wood-fired, on a thin crust"
+       },
+       "price": 69000,
+       "old_price": null,
+       "weight": "460 g",
+       "photo": "/img/pizza5.jpg",
+       "order": 5
+      }
+     ]
+    },
+    {
+     "title": {
+      "uz": "Pasta",
+      "ru": "Паста",
+      "en": "Pasta"
+     },
+     "order": 1,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Karbonara",
+        "ru": "Карбонара",
+        "en": "Carbonara"
+       },
+       "description": {
+        "uz": "Qaymoqli sous, bekon, parmezan",
+        "ru": "Сливочный соус, бекон, пармезан",
+        "en": "Cream sauce, bacon, parmesan"
+       },
+       "price": 48000,
+       "old_price": null,
+       "weight": "320 g",
+       "photo": "/img/pasta3.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Penne bolonyeze",
+        "ru": "Пенне болоньезе",
+        "en": "Penne bolognese"
+       },
+       "description": {
+        "uz": "Mol go'shtli pomidor sousi",
+        "ru": "Томатный соус с говядиной",
+        "en": "Tomato sauce with beef"
+       },
+       "price": 46000,
+       "old_price": null,
+       "weight": "340 g",
+       "photo": "/img/pasta1.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Dengiz mahsulotli",
+        "ru": "С морепродуктами",
+        "en": "Seafood"
+       },
+       "description": {
+        "uz": "Krevetka, pomidor, sarimsoq",
+        "ru": "Креветки, томаты, чеснок",
+        "en": "Shrimp, tomato, garlic"
+       },
+       "price": 64000,
+       "old_price": null,
+       "weight": "350 g",
+       "photo": "/img/pasta2.jpg",
+       "order": 2
+      }
+     ]
+    },
+    {
+     "title": {
+      "uz": "Gazak va salatlar",
+      "ru": "Закуски и салаты",
+      "en": "Starters and salads"
+     },
+     "order": 2,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Sezar",
+        "ru": "Цезарь",
+        "en": "Caesar"
+       },
+       "description": {
+        "uz": "Tovuq, parmezan, kruton, sezar sousi",
+        "ru": "Курица, пармезан, крутоны, соус цезарь",
+        "en": "Chicken, parmesan, croutons, Caesar dressing"
+       },
+       "price": 44000,
+       "old_price": null,
+       "weight": "250 g",
+       "photo": "/img/salad4.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Tovuq qanotchalari",
+        "ru": "Куриные крылышки",
+        "en": "Chicken wings"
+       },
+       "description": {
+        "uz": "8 dona, achchiq-shirin sousda",
+        "ru": "8 штук, в кисло-сладком соусе",
+        "en": "8 pieces, in sweet-and-spicy sauce"
+       },
+       "price": 44000,
+       "old_price": null,
+       "weight": "300 g",
+       "photo": "/img/wings1.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Kartoshka fri",
+        "ru": "Картофель фри",
+        "en": "French fries"
+       },
+       "description": {
+        "uz": "Tuzlangan, qarsildoq",
+        "ru": "Солёный, хрустящий",
+        "en": "Salted, crispy"
+       },
+       "price": 18000,
+       "old_price": null,
+       "weight": "150 g",
+       "photo": "/img/fries2.jpg",
+       "order": 2
+      }
+     ]
+    },
+    {
+     "title": {
+      "uz": "Shirinliklar",
+      "ru": "Десерты",
+      "en": "Desserts"
+     },
+     "order": 3,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Shokoladli pechenye",
+        "ru": "Шоколадное печенье",
+        "en": "Chocolate cookie"
+       },
+       "description": {
+        "uz": "Katta, issiq holda beriladi",
+        "ru": "Большое, подаётся тёплым",
+        "en": "Large, served warm"
+       },
+       "price": 22000,
+       "old_price": null,
+       "weight": "120 g",
+       "photo": "/img/cookie.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Chizkeyk",
+        "ru": "Чизкейк",
+        "en": "Cheesecake"
+       },
+       "description": {
+        "uz": "Qora smorodina sousi bilan",
+        "ru": "С соусом из чёрной смородины",
+        "en": "With blackcurrant sauce"
+       },
+       "price": 28000,
+       "old_price": null,
+       "weight": "130 g",
+       "photo": "/img/cheesecake.jpg",
+       "order": 1
+      }
+     ]
+    },
+    {
+     "title": {
+      "uz": "Ichimliklar",
+      "ru": "Напитки",
+      "en": "Drinks"
+     },
+     "order": 4,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Limonad",
+        "ru": "Лимонад",
+        "en": "Lemonade"
+       },
+       "description": {
+        "uz": "Uy usulida, limon va yalpiz bilan",
+        "ru": "Домашний, с лимоном и мятой",
+        "en": "Homemade, with lemon and mint"
+       },
+       "price": 16000,
+       "old_price": null,
+       "weight": "0.4 l",
+       "photo": "/img/lemonade.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Muzli choy",
+        "ru": "Холодный чай",
+        "en": "Iced tea"
+       },
+       "description": {
+        "uz": "Laym bilan, sovuq holda",
+        "ru": "С лаймом, охлаждённый",
+        "en": "With lime, served cold"
+       },
+       "price": 14000,
+       "old_price": null,
+       "weight": "0.4 l",
+       "photo": "/img/tea.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Suv",
+        "ru": "Вода",
+        "en": "Water"
+       },
+       "description": {
+        "uz": "Gazsiz",
+        "ru": "Без газа",
+        "en": "Still"
+       },
+       "price": 5000,
+       "old_price": null,
+       "weight": "0.5 l",
+       "photo": "/img/water.jpg",
+       "order": 2
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "dostlik",
+   "name": "Do'stlik Oshxonasi",
+   "categories": [
+    "milliy",
+    "gosht"
+   ],
+   "rating": 4.6,
+   "reviews": 2140,
+   "delivery_minutes": 25,
+   "distance_km": 1.5,
+   "discount_percent": 0,
+   "address": "Do'stlik sh., Navoiy ko'chasi, 30",
+   "hours": "09:00 – 22:00",
+   "cover": "/img/covers/dostlik.jpg",
+   "order": 7,
+   "sections": [
+    {
+     "title": {
+      "uz": "Asosiy taomlar",
+      "ru": "Основные блюда",
+      "en": "Main dishes"
+     },
+     "order": 0,
+     "dishes": [
+      {
+       "name": {
+        "uz": "To'y oshi",
+        "ru": "Свадебный плов",
+        "en": "Wedding plov"
+       },
+       "description": {
+        "uz": "Qo'y go'shti, sariq sabzi, no'xat, mayiz",
+        "ru": "Баранина, жёлтая морковь, нут, изюм",
+        "en": "Lamb, yellow carrot, chickpeas, raisins"
+       },
+       "price": 42000,
+       "old_price": null,
+       "weight": "400 g",
+       "photo": "/img/plov.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Choyxona oshi",
+        "ru": "Чайханский плов",
+        "en": "Teahouse plov"
+       },
+       "description": {
+        "uz": "Mol go'shti, qizil sabzi",
+        "ru": "Говядина, красная морковь",
+        "en": "Beef, red carrot"
+       },
+       "price": 38000,
+       "old_price": null,
+       "weight": "400 g",
+       "photo": "/img/plov2.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Qovurma lag'mon",
+        "ru": "Жареный лагман",
+        "en": "Fried lagman"
+       },
+       "description": {
+        "uz": "Cho'zma ugra, go'sht, bulg'or qalampiri",
+        "ru": "Тянутая лапша, мясо, болгарский перец",
+        "en": "Hand-pulled noodles, meat, bell pepper"
+       },
+       "price": 36000,
+       "old_price": null,
+       "weight": "380 g",
+       "photo": "/img/lagman.jpg",
+       "order": 2
+      },
+      {
+       "name": {
+        "uz": "Manti",
+        "ru": "Манты",
+        "en": "Manti"
+       },
+       "description": {
+        "uz": "5 dona, qo'y go'shti va piyoz",
+        "ru": "5 штук, баранина и лук",
+        "en": "5 pieces, lamb and onion"
+       },
+       "price": 34000,
+       "old_price": null,
+       "weight": "350 g",
+       "photo": "/img/manti.jpg",
+       "order": 3
+      },
+      {
+       "name": {
+        "uz": "Dimlama",
+        "ru": "Димлама",
+        "en": "Dimlama"
+       },
+       "description": {
+        "uz": "Go'sht va mavsumiy sabzavotlar",
+        "ru": "Мясо и сезонные овощи",
+        "en": "Meat and seasonal vegetables"
+       },
+       "price": 46000,
+       "old_price": null,
+       "weight": "420 g",
+       "photo": "/img/dimlama.jpg",
+       "order": 4
+      },
+      {
+       "name": {
+        "uz": "Tabaka jo'ja",
+        "ru": "Цыплёнок табака",
+        "en": "Chicken tabaka"
+       },
+       "description": {
+        "uz": "Butun jo'ja, sarimsoqli sous",
+        "ru": "Целый цыплёнок, чесночный соус",
+        "en": "Whole chicken, garlic sauce"
+       },
+       "price": 68000,
+       "old_price": null,
+       "weight": "700 g",
+       "photo": "/img/chicken.jpg",
+       "order": 5
+      }
+     ]
+    },
+    {
+     "title": {
+      "uz": "Kaboblar",
+      "ru": "Шашлыки",
+      "en": "Kebabs"
+     },
+     "order": 1,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Qo'y go'shtli kabob",
+        "ru": "Шашлык из баранины",
+        "en": "Lamb kebab"
+       },
+       "description": {
+        "uz": "2 six",
+        "ru": "2 шампура",
+        "en": "2 skewers"
+       },
+       "price": 44000,
+       "old_price": null,
+       "weight": "200 g",
+       "photo": "/img/shashlik.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Tovuq kabob",
+        "ru": "Куриный шашлык",
+        "en": "Chicken kebab"
+       },
+       "description": {
+        "uz": "2 six",
+        "ru": "2 шампура",
+        "en": "2 skewers"
+       },
+       "price": 32000,
+       "old_price": null,
+       "weight": "220 g",
+       "photo": "/img/tovuqkabob.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Kabob assorti",
+        "ru": "Ассорти шашлыков",
+        "en": "Kebab platter"
+       },
+       "description": {
+        "uz": "5 six, piyoz bilan",
+        "ru": "5 шампуров, с луком",
+        "en": "5 skewers, with onion"
+       },
+       "price": 98000,
+       "old_price": null,
+       "weight": "500 g",
+       "photo": "/img/kabob.jpg",
+       "order": 2
+      }
+     ]
+    },
+    {
+     "title": {
+      "uz": "Sho'rvalar",
+      "ru": "Супы",
+      "en": "Soups"
+     },
+     "order": 2,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Mastava",
+        "ru": "Мастава",
+        "en": "Mastava"
+       },
+       "description": {
+        "uz": "Guruchli, qatiq bilan",
+        "ru": "С рисом, подаётся с катыком",
+        "en": "Rice soup, served with yoghurt"
+       },
+       "price": 26000,
+       "old_price": null,
+       "weight": "400 ml",
+       "photo": "/img/mastava.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Chuchvara",
+        "ru": "Чучвара",
+        "en": "Chuchvara"
+       },
+       "description": {
+        "uz": "Sho'rvada, ko'katlar bilan",
+        "ru": "В бульоне, с зеленью",
+        "en": "In broth, with herbs"
+       },
+       "price": 30000,
+       "old_price": null,
+       "weight": "400 ml",
+       "photo": "/img/chuchvara.jpg",
+       "order": 1
+      }
+     ]
+    },
+    {
+     "title": {
+      "uz": "Non va somsa",
+      "ru": "Хлеб и самса",
+      "en": "Bread and samsa"
+     },
+     "order": 3,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Tandir non",
+        "ru": "Тандырная лепёшка",
+        "en": "Tandoor bread"
+       },
+       "description": {
+        "uz": "Issiq, kunjutli",
+        "ru": "Горячая, с кунжутом",
+        "en": "Hot, with sesame"
+       },
+       "price": 5000,
+       "old_price": null,
+       "weight": "1 dona",
+       "photo": "/img/non.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Somsa",
+        "ru": "Самса",
+        "en": "Samsa"
+       },
+       "description": {
+        "uz": "Tandirda, go'shtli, 2 dona",
+        "ru": "Из тандыра, с мясом, 2 штуки",
+        "en": "Tandoor-baked, with meat, 2 pieces"
+       },
+       "price": 22000,
+       "old_price": null,
+       "weight": "220 g",
+       "photo": "/img/samsa.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Mavsumiy salat",
+        "ru": "Сезонный салат",
+        "en": "Seasonal salad"
+       },
+       "description": {
+        "uz": "Yangi sabzavotlar, zaytun moyi",
+        "ru": "Свежие овощи, оливковое масло",
+        "en": "Fresh vegetables, olive oil"
+       },
+       "price": 24000,
+       "old_price": null,
+       "weight": "220 g",
+       "photo": "/img/veggies.jpg",
+       "order": 2
+      }
+     ]
+    },
+    {
+     "title": {
+      "uz": "Ichimliklar",
+      "ru": "Напитки",
+      "en": "Drinks"
+     },
+     "order": 4,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Limonad",
+        "ru": "Лимонад",
+        "en": "Lemonade"
+       },
+       "description": {
+        "uz": "Uy usulida, limon va yalpiz bilan",
+        "ru": "Домашний, с лимоном и мятой",
+        "en": "Homemade, with lemon and mint"
+       },
+       "price": 16000,
+       "old_price": null,
+       "weight": "0.4 l",
+       "photo": "/img/lemonade.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Muzli choy",
+        "ru": "Холодный чай",
+        "en": "Iced tea"
+       },
+       "description": {
+        "uz": "Laym bilan, sovuq holda",
+        "ru": "С лаймом, охлаждённый",
+        "en": "With lime, served cold"
+       },
+       "price": 14000,
+       "old_price": null,
+       "weight": "0.4 l",
+       "photo": "/img/tea.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Suv",
+        "ru": "Вода",
+        "en": "Water"
+       },
+       "description": {
+        "uz": "Gazsiz",
+        "ru": "Без газа",
+        "en": "Still"
+       },
+       "price": 5000,
+       "old_price": null,
+       "weight": "0.5 l",
+       "photo": "/img/water.jpg",
+       "order": 2
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "oqsuv",
+   "name": "Oqsuv",
+   "categories": [
+    "milliy"
+   ],
+   "rating": 4.8,
+   "reviews": 1187,
+   "delivery_minutes": 30,
+   "distance_km": 0.84,
+   "discount_percent": 0,
+   "address": "Do'stlik sh., Beruniy ko'chasi, 3",
+   "hours": "10:00 – 23:00",
+   "cover": "/img/covers/oqsuv.jpg",
+   "order": 8,
+   "sections": [
+    {
+     "title": {
+      "uz": "Asosiy taomlar",
+      "ru": "Основные блюда",
+      "en": "Main dishes"
+     },
+     "order": 0,
+     "dishes": [
+      {
+       "name": {
+        "uz": "To'y oshi",
+        "ru": "Свадебный плов",
+        "en": "Wedding plov"
+       },
+       "description": {
+        "uz": "Qo'y go'shti, sariq sabzi, no'xat, mayiz",
+        "ru": "Баранина, жёлтая морковь, нут, изюм",
+        "en": "Lamb, yellow carrot, chickpeas, raisins"
+       },
+       "price": 42000,
+       "old_price": null,
+       "weight": "400 g",
+       "photo": "/img/plov.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Choyxona oshi",
+        "ru": "Чайханский плов",
+        "en": "Teahouse plov"
+       },
+       "description": {
+        "uz": "Mol go'shti, qizil sabzi",
+        "ru": "Говядина, красная морковь",
+        "en": "Beef, red carrot"
+       },
+       "price": 38000,
+       "old_price": null,
+       "weight": "400 g",
+       "photo": "/img/plov2.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Qovurma lag'mon",
+        "ru": "Жареный лагман",
+        "en": "Fried lagman"
+       },
+       "description": {
+        "uz": "Cho'zma ugra, go'sht, bulg'or qalampiri",
+        "ru": "Тянутая лапша, мясо, болгарский перец",
+        "en": "Hand-pulled noodles, meat, bell pepper"
+       },
+       "price": 36000,
+       "old_price": null,
+       "weight": "380 g",
+       "photo": "/img/lagman.jpg",
+       "order": 2
+      },
+      {
+       "name": {
+        "uz": "Manti",
+        "ru": "Манты",
+        "en": "Manti"
+       },
+       "description": {
+        "uz": "5 dona, qo'y go'shti va piyoz",
+        "ru": "5 штук, баранина и лук",
+        "en": "5 pieces, lamb and onion"
+       },
+       "price": 34000,
+       "old_price": null,
+       "weight": "350 g",
+       "photo": "/img/manti.jpg",
+       "order": 3
+      },
+      {
+       "name": {
+        "uz": "Dimlama",
+        "ru": "Димлама",
+        "en": "Dimlama"
+       },
+       "description": {
+        "uz": "Go'sht va mavsumiy sabzavotlar",
+        "ru": "Мясо и сезонные овощи",
+        "en": "Meat and seasonal vegetables"
+       },
+       "price": 46000,
+       "old_price": null,
+       "weight": "420 g",
+       "photo": "/img/dimlama.jpg",
+       "order": 4
+      },
+      {
+       "name": {
+        "uz": "Tabaka jo'ja",
+        "ru": "Цыплёнок табака",
+        "en": "Chicken tabaka"
+       },
+       "description": {
+        "uz": "Butun jo'ja, sarimsoqli sous",
+        "ru": "Целый цыплёнок, чесночный соус",
+        "en": "Whole chicken, garlic sauce"
+       },
+       "price": 68000,
+       "old_price": null,
+       "weight": "700 g",
+       "photo": "/img/chicken.jpg",
+       "order": 5
+      }
+     ]
+    },
+    {
+     "title": {
+      "uz": "Kaboblar",
+      "ru": "Шашлыки",
+      "en": "Kebabs"
+     },
+     "order": 1,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Qo'y go'shtli kabob",
+        "ru": "Шашлык из баранины",
+        "en": "Lamb kebab"
+       },
+       "description": {
+        "uz": "2 six",
+        "ru": "2 шампура",
+        "en": "2 skewers"
+       },
+       "price": 44000,
+       "old_price": null,
+       "weight": "200 g",
+       "photo": "/img/shashlik.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Tovuq kabob",
+        "ru": "Куриный шашлык",
+        "en": "Chicken kebab"
+       },
+       "description": {
+        "uz": "2 six",
+        "ru": "2 шампура",
+        "en": "2 skewers"
+       },
+       "price": 32000,
+       "old_price": null,
+       "weight": "220 g",
+       "photo": "/img/tovuqkabob.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Kabob assorti",
+        "ru": "Ассорти шашлыков",
+        "en": "Kebab platter"
+       },
+       "description": {
+        "uz": "5 six, piyoz bilan",
+        "ru": "5 шампуров, с луком",
+        "en": "5 skewers, with onion"
+       },
+       "price": 98000,
+       "old_price": null,
+       "weight": "500 g",
+       "photo": "/img/kabob.jpg",
+       "order": 2
+      }
+     ]
+    },
+    {
+     "title": {
+      "uz": "Sho'rvalar",
+      "ru": "Супы",
+      "en": "Soups"
+     },
+     "order": 2,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Mastava",
+        "ru": "Мастава",
+        "en": "Mastava"
+       },
+       "description": {
+        "uz": "Guruchli, qatiq bilan",
+        "ru": "С рисом, подаётся с катыком",
+        "en": "Rice soup, served with yoghurt"
+       },
+       "price": 26000,
+       "old_price": null,
+       "weight": "400 ml",
+       "photo": "/img/mastava.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Chuchvara",
+        "ru": "Чучвара",
+        "en": "Chuchvara"
+       },
+       "description": {
+        "uz": "Sho'rvada, ko'katlar bilan",
+        "ru": "В бульоне, с зеленью",
+        "en": "In broth, with herbs"
+       },
+       "price": 30000,
+       "old_price": null,
+       "weight": "400 ml",
+       "photo": "/img/chuchvara.jpg",
+       "order": 1
+      }
+     ]
+    },
+    {
+     "title": {
+      "uz": "Non va somsa",
+      "ru": "Хлеб и самса",
+      "en": "Bread and samsa"
+     },
+     "order": 3,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Tandir non",
+        "ru": "Тандырная лепёшка",
+        "en": "Tandoor bread"
+       },
+       "description": {
+        "uz": "Issiq, kunjutli",
+        "ru": "Горячая, с кунжутом",
+        "en": "Hot, with sesame"
+       },
+       "price": 5000,
+       "old_price": null,
+       "weight": "1 dona",
+       "photo": "/img/non.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Somsa",
+        "ru": "Самса",
+        "en": "Samsa"
+       },
+       "description": {
+        "uz": "Tandirda, go'shtli, 2 dona",
+        "ru": "Из тандыра, с мясом, 2 штуки",
+        "en": "Tandoor-baked, with meat, 2 pieces"
+       },
+       "price": 22000,
+       "old_price": null,
+       "weight": "220 g",
+       "photo": "/img/samsa.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Mavsumiy salat",
+        "ru": "Сезонный салат",
+        "en": "Seasonal salad"
+       },
+       "description": {
+        "uz": "Yangi sabzavotlar, zaytun moyi",
+        "ru": "Свежие овощи, оливковое масло",
+        "en": "Fresh vegetables, olive oil"
+       },
+       "price": 24000,
+       "old_price": null,
+       "weight": "220 g",
+       "photo": "/img/veggies.jpg",
+       "order": 2
+      }
+     ]
+    },
+    {
+     "title": {
+      "uz": "Ichimliklar",
+      "ru": "Напитки",
+      "en": "Drinks"
+     },
+     "order": 4,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Limonad",
+        "ru": "Лимонад",
+        "en": "Lemonade"
+       },
+       "description": {
+        "uz": "Uy usulida, limon va yalpiz bilan",
+        "ru": "Домашний, с лимоном и мятой",
+        "en": "Homemade, with lemon and mint"
+       },
+       "price": 16000,
+       "old_price": null,
+       "weight": "0.4 l",
+       "photo": "/img/lemonade.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Muzli choy",
+        "ru": "Холодный чай",
+        "en": "Iced tea"
+       },
+       "description": {
+        "uz": "Laym bilan, sovuq holda",
+        "ru": "С лаймом, охлаждённый",
+        "en": "With lime, served cold"
+       },
+       "price": 14000,
+       "old_price": null,
+       "weight": "0.4 l",
+       "photo": "/img/tea.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Suv",
+        "ru": "Вода",
+        "en": "Water"
+       },
+       "description": {
+        "uz": "Gazsiz",
+        "ru": "Без газа",
+        "en": "Still"
+       },
+       "price": 5000,
+       "old_price": null,
+       "weight": "0.5 l",
+       "photo": "/img/water.jpg",
+       "order": 2
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "bon",
+   "name": "Bon!",
+   "categories": [
+    "nonushta",
+    "shirinlik"
+   ],
+   "rating": 4.8,
+   "reviews": 1456,
+   "delivery_minutes": 20,
+   "distance_km": 1.9,
+   "discount_percent": 15,
+   "address": "Do'stlik sh., Guliston ko'chasi, 28",
+   "hours": "07:30 – 23:00",
+   "cover": "/img/covers/bon.jpg",
+   "order": 9,
+   "sections": [
+    {
+     "title": {
+      "uz": "Nonushta",
+      "ru": "Завтраки",
+      "en": "Breakfast"
+     },
+     "order": 0,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Kruassan",
+        "ru": "Круассан",
+        "en": "Croissant"
+       },
+       "description": {
+        "uz": "Sariyog'li, yangi yopilgan",
+        "ru": "Сливочный, свежей выпечки",
+        "en": "Buttery, freshly baked"
+       },
+       "price": 18000,
+       "old_price": null,
+       "weight": "80 g",
+       "photo": "/img/croissant.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Pankeyk",
+        "ru": "Панкейки",
+        "en": "Pancakes"
+       },
+       "description": {
+        "uz": "Banan va chernika bilan",
+        "ru": "С бананом и черникой",
+        "en": "With banana and blueberries"
+       },
+       "price": 34000,
+       "old_price": null,
+       "weight": "240 g",
+       "photo": "/img/pancakes2.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Asalli pankeyk",
+        "ru": "Панкейки с мёдом",
+        "en": "Honey pancakes"
+       },
+       "description": {
+        "uz": "Asal va yalpiz bilan",
+        "ru": "С мёдом и мятой",
+        "en": "With honey and mint"
+       },
+       "price": 32000,
+       "old_price": null,
+       "weight": "220 g",
+       "photo": "/img/pancakes1.jpg",
+       "order": 2
+      },
+      {
+       "name": {
+        "uz": "Tuxumli tost",
+        "ru": "Тост с яйцом",
+        "en": "Egg toast"
+       },
+       "description": {
+        "uz": "Avokado pastasi, qovurilgan tuxum",
+        "ru": "Паста из авокадо, яичница",
+        "en": "Avocado spread, fried egg"
+       },
+       "price": 36000,
+       "old_price": null,
+       "weight": "200 g",
+       "photo": "/img/eggs.jpg",
+       "order": 3
+      },
+      {
+       "name": {
+        "uz": "Avokado tost",
+        "ru": "Авокадо-тост",
+        "en": "Avocado toast"
+       },
+       "description": {
+        "uz": "Qaynatilgan tuxum bilan",
+        "ru": "С варёным яйцом",
+        "en": "With a boiled egg"
+       },
+       "price": 42000,
+       "old_price": null,
+       "weight": "210 g",
+       "photo": "/img/avotoast.jpg",
+       "order": 4
+      },
+      {
+       "name": {
+        "uz": "Inglizcha nonushta",
+        "ru": "Английский завтрак",
+        "en": "English breakfast"
+       },
+       "description": {
+        "uz": "Tuxum, tost, pomidor",
+        "ru": "Яйцо, тосты, томаты",
+        "en": "Egg, toast, tomato"
+       },
+       "price": 46000,
+       "old_price": null,
+       "weight": "320 g",
+       "photo": "/img/breakfast.jpg",
+       "order": 5
+      }
+     ]
+    },
+    {
+     "title": {
+      "uz": "Salatlar",
+      "ru": "Салаты",
+      "en": "Salads"
+     },
+     "order": 1,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Sezar",
+        "ru": "Цезарь",
+        "en": "Caesar"
+       },
+       "description": {
+        "uz": "Tovuq, parmezan, kruton",
+        "ru": "Курица, пармезан, крутоны",
+        "en": "Chicken, parmesan, croutons"
+       },
+       "price": 44000,
+       "old_price": null,
+       "weight": "250 g",
+       "photo": "/img/salad4.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Grek salati",
+        "ru": "Греческий салат",
+        "en": "Greek salad"
+       },
+       "description": {
+        "uz": "Feta, zaytun, sabzavotlar",
+        "ru": "Фета, оливки, овощи",
+        "en": "Feta, olives, vegetables"
+       },
+       "price": 38000,
+       "old_price": null,
+       "weight": "240 g",
+       "photo": "/img/salad3.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Tovuqli boul",
+        "ru": "Боул с курицей",
+        "en": "Chicken bowl"
+       },
+       "description": {
+        "uz": "Tovuq, makkajo'xori, sabzavotlar",
+        "ru": "Курица, кукуруза, овощи",
+        "en": "Chicken, sweetcorn, vegetables"
+       },
+       "price": 46000,
+       "old_price": null,
+       "weight": "320 g",
+       "photo": "/img/salad2.jpg",
+       "order": 2
+      },
+      {
+       "name": {
+        "uz": "Sabzavotli boul",
+        "ru": "Овощной боул",
+        "en": "Veggie bowl"
+       },
+       "description": {
+        "uz": "Avokado, no'xat, pomidor",
+        "ru": "Авокадо, нут, томаты",
+        "en": "Avocado, chickpeas, tomato"
+       },
+       "price": 42000,
+       "old_price": null,
+       "weight": "300 g",
+       "photo": "/img/salad1.jpg",
+       "order": 3
+      }
+     ]
+    },
+    {
+     "title": {
+      "uz": "Shirinliklar",
+      "ru": "Десерты",
+      "en": "Desserts"
+     },
+     "order": 2,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Tiramisu",
+        "ru": "Тирамису",
+        "en": "Tiramisu"
+       },
+       "description": {
+        "uz": "Italyancha klassika",
+        "ru": "Итальянская классика",
+        "en": "An Italian classic"
+       },
+       "price": 34000,
+       "old_price": null,
+       "weight": "140 g",
+       "photo": "/img/tiramisu.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Malinali tort",
+        "ru": "Малиновый торт",
+        "en": "Raspberry cake"
+       },
+       "description": {
+        "uz": "Yengil krem, yangi malina",
+        "ru": "Лёгкий крем, свежая малина",
+        "en": "Light cream, fresh raspberries"
+       },
+       "price": 32000,
+       "old_price": null,
+       "weight": "140 g",
+       "photo": "/img/cake1.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Shokoladli tort",
+        "ru": "Шоколадный торт",
+        "en": "Chocolate cake"
+       },
+       "description": {
+        "uz": "Quyuq shokoladli krem",
+        "ru": "Густой шоколадный крем",
+        "en": "Rich chocolate cream"
+       },
+       "price": 34000,
+       "old_price": null,
+       "weight": "150 g",
+       "photo": "/img/cake2.jpg",
+       "order": 2
+      },
+      {
+       "name": {
+        "uz": "Makarun",
+        "ru": "Макаруны",
+        "en": "Macarons"
+       },
+       "description": {
+        "uz": "4 dona",
+        "ru": "4 штуки",
+        "en": "4 pieces"
+       },
+       "price": 36000,
+       "old_price": null,
+       "weight": "80 g",
+       "photo": "/img/macarons.jpg",
+       "order": 3
+      },
+      {
+       "name": {
+        "uz": "Donat",
+        "ru": "Донат",
+        "en": "Doughnut"
+       },
+       "description": {
+        "uz": "Shokoladli glazur bilan",
+        "ru": "С шоколадной глазурью",
+        "en": "With chocolate glaze"
+       },
+       "price": 16000,
+       "old_price": null,
+       "weight": "90 g",
+       "photo": "/img/donuts.jpg",
+       "order": 4
+      }
+     ]
+    },
+    {
+     "title": {
+      "uz": "Qahva va ichimliklar",
+      "ru": "Кофе и напитки",
+      "en": "Coffee and drinks"
+     },
+     "order": 3,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Kapuchino",
+        "ru": "Капучино",
+        "en": "Cappuccino"
+       },
+       "description": {
+        "uz": "Arabika 100%",
+        "ru": "Арабика 100%",
+        "en": "100% arabica"
+       },
+       "price": 24000,
+       "old_price": null,
+       "weight": "0.3 l",
+       "photo": "/img/coffee1.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Latte",
+        "ru": "Латте",
+        "en": "Latte"
+       },
+       "description": {
+        "uz": "Sirop tanlovi bilan",
+        "ru": "С сиропом на выбор",
+        "en": "With your choice of syrup"
+       },
+       "price": 26000,
+       "old_price": null,
+       "weight": "0.35 l",
+       "photo": "/img/latte.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Ays-latte",
+        "ru": "Айс-латте",
+        "en": "Iced latte"
+       },
+       "description": {
+        "uz": "Muz bilan",
+        "ru": "Со льдом",
+        "en": "With ice"
+       },
+       "price": 28000,
+       "old_price": null,
+       "weight": "0.4 l",
+       "photo": "/img/coffee3.jpg",
+       "order": 2
+      },
+      {
+       "name": {
+        "uz": "Mevali smuzi",
+        "ru": "Фруктовый смузи",
+        "en": "Fruit smoothie"
+       },
+       "description": {
+        "uz": "Banan, qulupnay",
+        "ru": "Банан, клубника",
+        "en": "Banana, strawberry"
+       },
+       "price": 30000,
+       "old_price": null,
+       "weight": "0.4 l",
+       "photo": "/img/smoothie.jpg",
+       "order": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "tokio-sushi",
+   "name": "Tokio Sushi",
+   "categories": [
+    "sushi"
+   ],
+   "rating": 4.8,
+   "reviews": 860,
+   "delivery_minutes": 10,
+   "distance_km": 1.4,
+   "discount_percent": 0,
+   "address": "Do'stlik sh., Oybek ko'chasi, 22",
+   "hours": "11:00 – 23:00",
+   "cover": "/img/covers/tokio-sushi.jpg",
+   "order": 10,
+   "sections": [
+    {
+     "title": {
+      "uz": "Rollar",
+      "ru": "Роллы",
+      "en": "Rolls"
+     },
+     "order": 0,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Filadelfiya",
+        "ru": "Филадельфия",
+        "en": "Philadelphia"
+       },
+       "description": {
+        "uz": "Losos, qaymoqli pishloq, bodring",
+        "ru": "Лосось, сливочный сыр, огурец",
+        "en": "Salmon, cream cheese, cucumber"
+       },
+       "price": 68000,
+       "old_price": null,
+       "weight": "260 g",
+       "photo": "/img/sushi1.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Sake maki",
+        "ru": "Сяке маки",
+        "en": "Sake maki"
+       },
+       "description": {
+        "uz": "Losos, kunjut, nori",
+        "ru": "Лосось, кунжут, нори",
+        "en": "Salmon, sesame, nori"
+       },
+       "price": 42000,
+       "old_price": null,
+       "weight": "180 g",
+       "photo": "/img/sushi4.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Losos nigiri",
+        "ru": "Нигири с лососем",
+        "en": "Salmon nigiri"
+       },
+       "description": {
+        "uz": "3 dona",
+        "ru": "3 штуки",
+        "en": "3 pieces"
+       },
+       "price": 39000,
+       "old_price": null,
+       "weight": "110 g",
+       "photo": "/img/sushi6.jpg",
+       "order": 2
+      }
+     ]
+    },
+    {
+     "title": {
+      "uz": "Setlar",
+      "ru": "Сеты",
+      "en": "Sets"
+     },
+     "order": 1,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Set «Kema»",
+        "ru": "Сет «Корабль»",
+        "en": "“Boat” set"
+       },
+       "description": {
+        "uz": "32 dona, 4 xil roll",
+        "ru": "32 штуки, 4 вида роллов",
+        "en": "32 pieces, 4 kinds of rolls"
+       },
+       "price": 219000,
+       "old_price": null,
+       "weight": "1.1 kg",
+       "photo": "/img/sushi2.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Set «Assorti»",
+        "ru": "Сет «Ассорти»",
+        "en": "“Assorted” set"
+       },
+       "description": {
+        "uz": "24 dona, roll va nigiri",
+        "ru": "24 штуки: роллы и нигири",
+        "en": "24 pieces: rolls and nigiri"
+       },
+       "price": 169000,
+       "old_price": null,
+       "weight": "820 g",
+       "photo": "/img/sushi5.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Nigiri set",
+        "ru": "Сет нигири",
+        "en": "Nigiri set"
+       },
+       "description": {
+        "uz": "8 dona, 4 xil baliq",
+        "ru": "8 штук, 4 вида рыбы",
+        "en": "8 pieces, 4 kinds of fish"
+       },
+       "price": 98000,
+       "old_price": null,
+       "weight": "300 g",
+       "photo": "/img/sushi3.jpg",
+       "order": 2
+      }
+     ]
+    },
+    {
+     "title": {
+      "uz": "Issiq taomlar",
+      "ru": "Горячие блюда",
+      "en": "Hot dishes"
+     },
+     "order": 2,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Ramen dengiz mahsulotli",
+        "ru": "Рамен с морепродуктами",
+        "en": "Seafood ramen"
+       },
+       "description": {
+        "uz": "Krevetka, tuxum, ugra",
+        "ru": "Креветки, яйцо, лапша",
+        "en": "Shrimp, egg, noodles"
+       },
+       "price": 54000,
+       "old_price": null,
+       "weight": "450 ml",
+       "photo": "/img/ramen1.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Ramen shoyu",
+        "ru": "Рамен сёю",
+        "en": "Shoyu ramen"
+       },
+       "description": {
+        "uz": "Tovuq sho'rvasi, tuxum, nori",
+        "ru": "Куриный бульон, яйцо, нори",
+        "en": "Chicken broth, egg, nori"
+       },
+       "price": 48000,
+       "old_price": null,
+       "weight": "450 ml",
+       "photo": "/img/ramen2.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Yakisoba",
+        "ru": "Якисоба",
+        "en": "Yakisoba"
+       },
+       "description": {
+        "uz": "Qovurilgan ugra, sabzavotlar",
+        "ru": "Жареная лапша, овощи",
+        "en": "Fried noodles, vegetables"
+       },
+       "price": 44000,
+       "old_price": null,
+       "weight": "320 g",
+       "photo": "/img/noodles.jpg",
+       "order": 2
+      },
+      {
+       "name": {
+        "uz": "Gyoza",
+        "ru": "Гёдза",
+        "en": "Gyoza"
+       },
+       "description": {
+        "uz": "6 dona, soya sousi bilan",
+        "ru": "6 штук, с соевым соусом",
+        "en": "6 pieces, with soy sauce"
+       },
+       "price": 34000,
+       "old_price": null,
+       "weight": "180 g",
+       "photo": "/img/dumplings1.jpg",
+       "order": 3
+      }
+     ]
+    },
+    {
+     "title": {
+      "uz": "Ichimliklar",
+      "ru": "Напитки",
+      "en": "Drinks"
+     },
+     "order": 3,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Limonad",
+        "ru": "Лимонад",
+        "en": "Lemonade"
+       },
+       "description": {
+        "uz": "Uy usulida, limon va yalpiz bilan",
+        "ru": "Домашний, с лимоном и мятой",
+        "en": "Homemade, with lemon and mint"
+       },
+       "price": 16000,
+       "old_price": null,
+       "weight": "0.4 l",
+       "photo": "/img/lemonade.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Muzli choy",
+        "ru": "Холодный чай",
+        "en": "Iced tea"
+       },
+       "description": {
+        "uz": "Laym bilan, sovuq holda",
+        "ru": "С лаймом, охлаждённый",
+        "en": "With lime, served cold"
+       },
+       "price": 14000,
+       "old_price": null,
+       "weight": "0.4 l",
+       "photo": "/img/tea.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Suv",
+        "ru": "Вода",
+        "en": "Water"
+       },
+       "description": {
+        "uz": "Gazsiz",
+        "ru": "Без газа",
+        "en": "Still"
+       },
+       "price": 5000,
+       "old_price": null,
+       "weight": "0.5 l",
+       "photo": "/img/water.jpg",
+       "order": 2
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "qora-burger",
+   "name": "Qora Burger",
+   "categories": [
+    "burger"
+   ],
+   "rating": 4.5,
+   "reviews": 96,
+   "delivery_minutes": 25,
+   "distance_km": 1.7,
+   "discount_percent": 0,
+   "address": "Do'stlik sh., Yoshlik ko'chasi, 71",
+   "hours": "10:00 – 02:00",
+   "cover": "/img/covers/qora-burger.jpg",
+   "order": 11,
+   "sections": [
+    {
+     "title": {
+      "uz": "Burgerlar",
+      "ru": "Бургеры",
+      "en": "Burgers"
+     },
+     "order": 0,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Klassik burger",
+        "ru": "Классический бургер",
+        "en": "Classic burger"
+       },
+       "description": {
+        "uz": "Mol go'shti kotleti, salat bargi, pomidor",
+        "ru": "Говяжья котлета, лист салата, томат",
+        "en": "Beef patty, lettuce, tomato"
+       },
+       "price": 38000,
+       "old_price": null,
+       "weight": "280 g",
+       "photo": "/img/burger3.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Chizburger",
+        "ru": "Чизбургер",
+        "en": "Cheeseburger"
+       },
+       "description": {
+        "uz": "Eritilgan cheddar, maxsus sous",
+        "ru": "Плавленый чеддер, фирменный соус",
+        "en": "Melted cheddar, house sauce"
+       },
+       "price": 42000,
+       "old_price": null,
+       "weight": "300 g",
+       "photo": "/img/burger1.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Bekonli burger",
+        "ru": "Бургер с беконом",
+        "en": "Bacon burger"
+       },
+       "description": {
+        "uz": "Qarsildoq bekon, cheddar, salat",
+        "ru": "Хрустящий бекон, чеддер, салат",
+        "en": "Crispy bacon, cheddar, lettuce"
+       },
+       "price": 48000,
+       "old_price": null,
+       "weight": "320 g",
+       "photo": "/img/burger6.jpg",
+       "order": 2
+      },
+      {
+       "name": {
+        "uz": "Dabl burger",
+        "ru": "Двойной бургер",
+        "en": "Double burger"
+       },
+       "description": {
+        "uz": "Ikkita kotlet, karamellangan piyoz",
+        "ru": "Две котлеты, карамелизированный лук",
+        "en": "Two patties, caramelised onion"
+       },
+       "price": 62000,
+       "old_price": null,
+       "weight": "420 g",
+       "photo": "/img/burger4.jpg",
+       "order": 3
+      }
+     ]
+    },
+    {
+     "title": {
+      "uz": "Kombo",
+      "ru": "Комбо",
+      "en": "Combos"
+     },
+     "order": 1,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Kombo klassik",
+        "ru": "Комбо классик",
+        "en": "Classic combo"
+       },
+       "description": {
+        "uz": "Burger + kartoshka fri",
+        "ru": "Бургер + картофель фри",
+        "en": "Burger + French fries"
+       },
+       "price": 52000,
+       "old_price": null,
+       "weight": "450 g",
+       "photo": "/img/burger5.jpg",
+       "order": 0
+      }
+     ]
+    },
+    {
+     "title": {
+      "uz": "Gazaklar",
+      "ru": "Закуски",
+      "en": "Starters"
+     },
+     "order": 2,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Parmezanli fri",
+        "ru": "Фри с пармезаном",
+        "en": "Parmesan fries"
+       },
+       "description": {
+        "uz": "Parmezan va ko'katlar bilan",
+        "ru": "С пармезаном и зеленью",
+        "en": "With parmesan and herbs"
+       },
+       "price": 22000,
+       "old_price": null,
+       "weight": "170 g",
+       "photo": "/img/fries1.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Tovuq strips",
+        "ru": "Куриные стрипсы",
+        "en": "Chicken strips"
+       },
+       "description": {
+        "uz": "6 dona, sarimsoqli sous bilan",
+        "ru": "6 штук, с чесночным соусом",
+        "en": "6 pieces, with garlic sauce"
+       },
+       "price": 32000,
+       "old_price": null,
+       "weight": "200 g",
+       "photo": "/img/nuggets.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Achchiq qanotchalar",
+        "ru": "Острые крылышки",
+        "en": "Spicy wings"
+       },
+       "description": {
+        "uz": "8 dona, kunjut bilan",
+        "ru": "8 штук, с кунжутом",
+        "en": "8 pieces, with sesame"
+       },
+       "price": 44000,
+       "old_price": null,
+       "weight": "300 g",
+       "photo": "/img/wings2.jpg",
+       "order": 2
+      }
+     ]
+    },
+    {
+     "title": {
+      "uz": "Ichimliklar",
+      "ru": "Напитки",
+      "en": "Drinks"
+     },
+     "order": 3,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Milksheyk",
+        "ru": "Милкшейк",
+        "en": "Milkshake"
+       },
+       "description": {
+        "uz": "Shokoladli, pechenye bilan",
+        "ru": "Шоколадный, с печеньем",
+        "en": "Chocolate, with cookies"
+       },
+       "price": 26000,
+       "old_price": null,
+       "weight": "0.4 l",
+       "photo": "/img/milkshake.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Limonad",
+        "ru": "Лимонад",
+        "en": "Lemonade"
+       },
+       "description": {
+        "uz": "Uy usulida, limon va yalpiz bilan",
+        "ru": "Домашний, с лимоном и мятой",
+        "en": "Homemade, with lemon and mint"
+       },
+       "price": 16000,
+       "old_price": null,
+       "weight": "0.4 l",
+       "photo": "/img/lemonade.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Muzli choy",
+        "ru": "Холодный чай",
+        "en": "Iced tea"
+       },
+       "description": {
+        "uz": "Laym bilan, sovuq holda",
+        "ru": "С лаймом, охлаждённый",
+        "en": "With lime, served cold"
+       },
+       "price": 14000,
+       "old_price": null,
+       "weight": "0.4 l",
+       "photo": "/img/tea.jpg",
+       "order": 2
+      },
+      {
+       "name": {
+        "uz": "Suv",
+        "ru": "Вода",
+        "en": "Water"
+       },
+       "description": {
+        "uz": "Gazsiz",
+        "ru": "Без газа",
+        "en": "Still"
+       },
+       "price": 5000,
+       "old_price": null,
+       "weight": "0.5 l",
+       "photo": "/img/water.jpg",
+       "order": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "burger-elchixona",
+   "name": "Burger Elchixonasi",
+   "categories": [
+    "burger"
+   ],
+   "rating": 4.5,
+   "reviews": 640,
+   "delivery_minutes": 10,
+   "distance_km": 1.1,
+   "discount_percent": 40,
+   "address": "Do'stlik sh., Tinchlik ko'chasi, 5",
+   "hours": "10:00 – 00:00",
+   "cover": "/img/covers/burger-elchixona.jpg",
+   "order": 12,
+   "sections": [
+    {
+     "title": {
+      "uz": "Burgerlar",
+      "ru": "Бургеры",
+      "en": "Burgers"
+     },
+     "order": 0,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Klassik burger",
+        "ru": "Классический бургер",
+        "en": "Classic burger"
+       },
+       "description": {
+        "uz": "Mol go'shti kotleti, salat bargi, pomidor",
+        "ru": "Говяжья котлета, лист салата, томат",
+        "en": "Beef patty, lettuce, tomato"
+       },
+       "price": 38000,
+       "old_price": null,
+       "weight": "280 g",
+       "photo": "/img/burger3.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Chizburger",
+        "ru": "Чизбургер",
+        "en": "Cheeseburger"
+       },
+       "description": {
+        "uz": "Eritilgan cheddar, maxsus sous",
+        "ru": "Плавленый чеддер, фирменный соус",
+        "en": "Melted cheddar, house sauce"
+       },
+       "price": 42000,
+       "old_price": null,
+       "weight": "300 g",
+       "photo": "/img/burger1.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Bekonli burger",
+        "ru": "Бургер с беконом",
+        "en": "Bacon burger"
+       },
+       "description": {
+        "uz": "Qarsildoq bekon, cheddar, salat",
+        "ru": "Хрустящий бекон, чеддер, салат",
+        "en": "Crispy bacon, cheddar, lettuce"
+       },
+       "price": 48000,
+       "old_price": null,
+       "weight": "320 g",
+       "photo": "/img/burger6.jpg",
+       "order": 2
+      },
+      {
+       "name": {
+        "uz": "Dabl burger",
+        "ru": "Двойной бургер",
+        "en": "Double burger"
+       },
+       "description": {
+        "uz": "Ikkita kotlet, karamellangan piyoz",
+        "ru": "Две котлеты, карамелизированный лук",
+        "en": "Two patties, caramelised onion"
+       },
+       "price": 62000,
+       "old_price": null,
+       "weight": "420 g",
+       "photo": "/img/burger4.jpg",
+       "order": 3
+      }
+     ]
+    },
+    {
+     "title": {
+      "uz": "Kombo",
+      "ru": "Комбо",
+      "en": "Combos"
+     },
+     "order": 1,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Kombo klassik",
+        "ru": "Комбо классик",
+        "en": "Classic combo"
+       },
+       "description": {
+        "uz": "Burger + kartoshka fri",
+        "ru": "Бургер + картофель фри",
+        "en": "Burger + French fries"
+       },
+       "price": 52000,
+       "old_price": null,
+       "weight": "450 g",
+       "photo": "/img/burger5.jpg",
+       "order": 0
+      }
+     ]
+    },
+    {
+     "title": {
+      "uz": "Gazaklar",
+      "ru": "Закуски",
+      "en": "Starters"
+     },
+     "order": 2,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Parmezanli fri",
+        "ru": "Фри с пармезаном",
+        "en": "Parmesan fries"
+       },
+       "description": {
+        "uz": "Parmezan va ko'katlar bilan",
+        "ru": "С пармезаном и зеленью",
+        "en": "With parmesan and herbs"
+       },
+       "price": 22000,
+       "old_price": null,
+       "weight": "170 g",
+       "photo": "/img/fries1.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Tovuq strips",
+        "ru": "Куриные стрипсы",
+        "en": "Chicken strips"
+       },
+       "description": {
+        "uz": "6 dona, sarimsoqli sous bilan",
+        "ru": "6 штук, с чесночным соусом",
+        "en": "6 pieces, with garlic sauce"
+       },
+       "price": 32000,
+       "old_price": null,
+       "weight": "200 g",
+       "photo": "/img/nuggets.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Achchiq qanotchalar",
+        "ru": "Острые крылышки",
+        "en": "Spicy wings"
+       },
+       "description": {
+        "uz": "8 dona, kunjut bilan",
+        "ru": "8 штук, с кунжутом",
+        "en": "8 pieces, with sesame"
+       },
+       "price": 44000,
+       "old_price": null,
+       "weight": "300 g",
+       "photo": "/img/wings2.jpg",
+       "order": 2
+      }
+     ]
+    },
+    {
+     "title": {
+      "uz": "Ichimliklar",
+      "ru": "Напитки",
+      "en": "Drinks"
+     },
+     "order": 3,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Milksheyk",
+        "ru": "Милкшейк",
+        "en": "Milkshake"
+       },
+       "description": {
+        "uz": "Shokoladli, pechenye bilan",
+        "ru": "Шоколадный, с печеньем",
+        "en": "Chocolate, with cookies"
+       },
+       "price": 26000,
+       "old_price": null,
+       "weight": "0.4 l",
+       "photo": "/img/milkshake.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Limonad",
+        "ru": "Лимонад",
+        "en": "Lemonade"
+       },
+       "description": {
+        "uz": "Uy usulida, limon va yalpiz bilan",
+        "ru": "Домашний, с лимоном и мятой",
+        "en": "Homemade, with lemon and mint"
+       },
+       "price": 16000,
+       "old_price": null,
+       "weight": "0.4 l",
+       "photo": "/img/lemonade.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Muzli choy",
+        "ru": "Холодный чай",
+        "en": "Iced tea"
+       },
+       "description": {
+        "uz": "Laym bilan, sovuq holda",
+        "ru": "С лаймом, охлаждённый",
+        "en": "With lime, served cold"
+       },
+       "price": 14000,
+       "old_price": null,
+       "weight": "0.4 l",
+       "photo": "/img/tea.jpg",
+       "order": 2
+      },
+      {
+       "name": {
+        "uz": "Suv",
+        "ru": "Вода",
+        "en": "Water"
+       },
+       "description": {
+        "uz": "Gazsiz",
+        "ru": "Без газа",
+        "en": "Still"
+       },
+       "price": 5000,
+       "old_price": null,
+       "weight": "0.5 l",
+       "photo": "/img/water.jpg",
+       "order": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "ya-sushi",
+   "name": "Yapon Sushi",
+   "categories": [
+    "sushi"
+   ],
+   "rating": 4.5,
+   "reviews": 1320,
+   "delivery_minutes": 20,
+   "distance_km": 1.6,
+   "discount_percent": 40,
+   "address": "Do'stlik sh., Paxtakor ko'chasi, 14",
+   "hours": "11:00 – 23:00",
+   "cover": "/img/covers/ya-sushi.jpg",
+   "order": 13,
+   "sections": [
+    {
+     "title": {
+      "uz": "Rollar",
+      "ru": "Роллы",
+      "en": "Rolls"
+     },
+     "order": 0,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Filadelfiya",
+        "ru": "Филадельфия",
+        "en": "Philadelphia"
+       },
+       "description": {
+        "uz": "Losos, qaymoqli pishloq, bodring",
+        "ru": "Лосось, сливочный сыр, огурец",
+        "en": "Salmon, cream cheese, cucumber"
+       },
+       "price": 68000,
+       "old_price": null,
+       "weight": "260 g",
+       "photo": "/img/sushi1.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Sake maki",
+        "ru": "Сяке маки",
+        "en": "Sake maki"
+       },
+       "description": {
+        "uz": "Losos, kunjut, nori",
+        "ru": "Лосось, кунжут, нори",
+        "en": "Salmon, sesame, nori"
+       },
+       "price": 42000,
+       "old_price": null,
+       "weight": "180 g",
+       "photo": "/img/sushi4.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Losos nigiri",
+        "ru": "Нигири с лососем",
+        "en": "Salmon nigiri"
+       },
+       "description": {
+        "uz": "3 dona",
+        "ru": "3 штуки",
+        "en": "3 pieces"
+       },
+       "price": 39000,
+       "old_price": null,
+       "weight": "110 g",
+       "photo": "/img/sushi6.jpg",
+       "order": 2
+      }
+     ]
+    },
+    {
+     "title": {
+      "uz": "Setlar",
+      "ru": "Сеты",
+      "en": "Sets"
+     },
+     "order": 1,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Set «Kema»",
+        "ru": "Сет «Корабль»",
+        "en": "“Boat” set"
+       },
+       "description": {
+        "uz": "32 dona, 4 xil roll",
+        "ru": "32 штуки, 4 вида роллов",
+        "en": "32 pieces, 4 kinds of rolls"
+       },
+       "price": 219000,
+       "old_price": null,
+       "weight": "1.1 kg",
+       "photo": "/img/sushi2.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Set «Assorti»",
+        "ru": "Сет «Ассорти»",
+        "en": "“Assorted” set"
+       },
+       "description": {
+        "uz": "24 dona, roll va nigiri",
+        "ru": "24 штуки: роллы и нигири",
+        "en": "24 pieces: rolls and nigiri"
+       },
+       "price": 169000,
+       "old_price": null,
+       "weight": "820 g",
+       "photo": "/img/sushi5.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Nigiri set",
+        "ru": "Сет нигири",
+        "en": "Nigiri set"
+       },
+       "description": {
+        "uz": "8 dona, 4 xil baliq",
+        "ru": "8 штук, 4 вида рыбы",
+        "en": "8 pieces, 4 kinds of fish"
+       },
+       "price": 98000,
+       "old_price": null,
+       "weight": "300 g",
+       "photo": "/img/sushi3.jpg",
+       "order": 2
+      }
+     ]
+    },
+    {
+     "title": {
+      "uz": "Issiq taomlar",
+      "ru": "Горячие блюда",
+      "en": "Hot dishes"
+     },
+     "order": 2,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Ramen dengiz mahsulotli",
+        "ru": "Рамен с морепродуктами",
+        "en": "Seafood ramen"
+       },
+       "description": {
+        "uz": "Krevetka, tuxum, ugra",
+        "ru": "Креветки, яйцо, лапша",
+        "en": "Shrimp, egg, noodles"
+       },
+       "price": 54000,
+       "old_price": null,
+       "weight": "450 ml",
+       "photo": "/img/ramen1.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Ramen shoyu",
+        "ru": "Рамен сёю",
+        "en": "Shoyu ramen"
+       },
+       "description": {
+        "uz": "Tovuq sho'rvasi, tuxum, nori",
+        "ru": "Куриный бульон, яйцо, нори",
+        "en": "Chicken broth, egg, nori"
+       },
+       "price": 48000,
+       "old_price": null,
+       "weight": "450 ml",
+       "photo": "/img/ramen2.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Yakisoba",
+        "ru": "Якисоба",
+        "en": "Yakisoba"
+       },
+       "description": {
+        "uz": "Qovurilgan ugra, sabzavotlar",
+        "ru": "Жареная лапша, овощи",
+        "en": "Fried noodles, vegetables"
+       },
+       "price": 44000,
+       "old_price": null,
+       "weight": "320 g",
+       "photo": "/img/noodles.jpg",
+       "order": 2
+      },
+      {
+       "name": {
+        "uz": "Gyoza",
+        "ru": "Гёдза",
+        "en": "Gyoza"
+       },
+       "description": {
+        "uz": "6 dona, soya sousi bilan",
+        "ru": "6 штук, с соевым соусом",
+        "en": "6 pieces, with soy sauce"
+       },
+       "price": 34000,
+       "old_price": null,
+       "weight": "180 g",
+       "photo": "/img/dumplings1.jpg",
+       "order": 3
+      }
+     ]
+    },
+    {
+     "title": {
+      "uz": "Ichimliklar",
+      "ru": "Напитки",
+      "en": "Drinks"
+     },
+     "order": 3,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Limonad",
+        "ru": "Лимонад",
+        "en": "Lemonade"
+       },
+       "description": {
+        "uz": "Uy usulida, limon va yalpiz bilan",
+        "ru": "Домашний, с лимоном и мятой",
+        "en": "Homemade, with lemon and mint"
+       },
+       "price": 16000,
+       "old_price": null,
+       "weight": "0.4 l",
+       "photo": "/img/lemonade.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Muzli choy",
+        "ru": "Холодный чай",
+        "en": "Iced tea"
+       },
+       "description": {
+        "uz": "Laym bilan, sovuq holda",
+        "ru": "С лаймом, охлаждённый",
+        "en": "With lime, served cold"
+       },
+       "price": 14000,
+       "old_price": null,
+       "weight": "0.4 l",
+       "photo": "/img/tea.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Suv",
+        "ru": "Вода",
+        "en": "Water"
+       },
+       "description": {
+        "uz": "Gazsiz",
+        "ru": "Без газа",
+        "en": "Still"
+       },
+       "price": 5000,
+       "old_price": null,
+       "weight": "0.5 l",
+       "photo": "/img/water.jpg",
+       "order": 2
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "teppan",
+   "name": "Teppan",
+   "categories": [
+    "sushi"
+   ],
+   "rating": 4.7,
+   "reviews": 418,
+   "delivery_minutes": 35,
+   "distance_km": 0.65,
+   "discount_percent": 0,
+   "address": "Do'stlik sh., Sharq ko'chasi, 9",
+   "hours": "12:00 – 23:00",
+   "cover": "/img/covers/teppan.jpg",
+   "order": 14,
+   "sections": [
+    {
+     "title": {
+      "uz": "Rollar",
+      "ru": "Роллы",
+      "en": "Rolls"
+     },
+     "order": 0,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Filadelfiya",
+        "ru": "Филадельфия",
+        "en": "Philadelphia"
+       },
+       "description": {
+        "uz": "Losos, qaymoqli pishloq, bodring",
+        "ru": "Лосось, сливочный сыр, огурец",
+        "en": "Salmon, cream cheese, cucumber"
+       },
+       "price": 68000,
+       "old_price": null,
+       "weight": "260 g",
+       "photo": "/img/sushi1.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Sake maki",
+        "ru": "Сяке маки",
+        "en": "Sake maki"
+       },
+       "description": {
+        "uz": "Losos, kunjut, nori",
+        "ru": "Лосось, кунжут, нори",
+        "en": "Salmon, sesame, nori"
+       },
+       "price": 42000,
+       "old_price": null,
+       "weight": "180 g",
+       "photo": "/img/sushi4.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Losos nigiri",
+        "ru": "Нигири с лососем",
+        "en": "Salmon nigiri"
+       },
+       "description": {
+        "uz": "3 dona",
+        "ru": "3 штуки",
+        "en": "3 pieces"
+       },
+       "price": 39000,
+       "old_price": null,
+       "weight": "110 g",
+       "photo": "/img/sushi6.jpg",
+       "order": 2
+      }
+     ]
+    },
+    {
+     "title": {
+      "uz": "Setlar",
+      "ru": "Сеты",
+      "en": "Sets"
+     },
+     "order": 1,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Set «Kema»",
+        "ru": "Сет «Корабль»",
+        "en": "“Boat” set"
+       },
+       "description": {
+        "uz": "32 dona, 4 xil roll",
+        "ru": "32 штуки, 4 вида роллов",
+        "en": "32 pieces, 4 kinds of rolls"
+       },
+       "price": 219000,
+       "old_price": null,
+       "weight": "1.1 kg",
+       "photo": "/img/sushi2.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Set «Assorti»",
+        "ru": "Сет «Ассорти»",
+        "en": "“Assorted” set"
+       },
+       "description": {
+        "uz": "24 dona, roll va nigiri",
+        "ru": "24 штуки: роллы и нигири",
+        "en": "24 pieces: rolls and nigiri"
+       },
+       "price": 169000,
+       "old_price": null,
+       "weight": "820 g",
+       "photo": "/img/sushi5.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Nigiri set",
+        "ru": "Сет нигири",
+        "en": "Nigiri set"
+       },
+       "description": {
+        "uz": "8 dona, 4 xil baliq",
+        "ru": "8 штук, 4 вида рыбы",
+        "en": "8 pieces, 4 kinds of fish"
+       },
+       "price": 98000,
+       "old_price": null,
+       "weight": "300 g",
+       "photo": "/img/sushi3.jpg",
+       "order": 2
+      }
+     ]
+    },
+    {
+     "title": {
+      "uz": "Issiq taomlar",
+      "ru": "Горячие блюда",
+      "en": "Hot dishes"
+     },
+     "order": 2,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Ramen dengiz mahsulotli",
+        "ru": "Рамен с морепродуктами",
+        "en": "Seafood ramen"
+       },
+       "description": {
+        "uz": "Krevetka, tuxum, ugra",
+        "ru": "Креветки, яйцо, лапша",
+        "en": "Shrimp, egg, noodles"
+       },
+       "price": 54000,
+       "old_price": null,
+       "weight": "450 ml",
+       "photo": "/img/ramen1.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Ramen shoyu",
+        "ru": "Рамен сёю",
+        "en": "Shoyu ramen"
+       },
+       "description": {
+        "uz": "Tovuq sho'rvasi, tuxum, nori",
+        "ru": "Куриный бульон, яйцо, нори",
+        "en": "Chicken broth, egg, nori"
+       },
+       "price": 48000,
+       "old_price": null,
+       "weight": "450 ml",
+       "photo": "/img/ramen2.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Yakisoba",
+        "ru": "Якисоба",
+        "en": "Yakisoba"
+       },
+       "description": {
+        "uz": "Qovurilgan ugra, sabzavotlar",
+        "ru": "Жареная лапша, овощи",
+        "en": "Fried noodles, vegetables"
+       },
+       "price": 44000,
+       "old_price": null,
+       "weight": "320 g",
+       "photo": "/img/noodles.jpg",
+       "order": 2
+      },
+      {
+       "name": {
+        "uz": "Gyoza",
+        "ru": "Гёдза",
+        "en": "Gyoza"
+       },
+       "description": {
+        "uz": "6 dona, soya sousi bilan",
+        "ru": "6 штук, с соевым соусом",
+        "en": "6 pieces, with soy sauce"
+       },
+       "price": 34000,
+       "old_price": null,
+       "weight": "180 g",
+       "photo": "/img/dumplings1.jpg",
+       "order": 3
+      }
+     ]
+    },
+    {
+     "title": {
+      "uz": "Ichimliklar",
+      "ru": "Напитки",
+      "en": "Drinks"
+     },
+     "order": 3,
+     "dishes": [
+      {
+       "name": {
+        "uz": "Limonad",
+        "ru": "Лимонад",
+        "en": "Lemonade"
+       },
+       "description": {
+        "uz": "Uy usulida, limon va yalpiz bilan",
+        "ru": "Домашний, с лимоном и мятой",
+        "en": "Homemade, with lemon and mint"
+       },
+       "price": 16000,
+       "old_price": null,
+       "weight": "0.4 l",
+       "photo": "/img/lemonade.jpg",
+       "order": 0
+      },
+      {
+       "name": {
+        "uz": "Muzli choy",
+        "ru": "Холодный чай",
+        "en": "Iced tea"
+       },
+       "description": {
+        "uz": "Laym bilan, sovuq holda",
+        "ru": "С лаймом, охлаждённый",
+        "en": "With lime, served cold"
+       },
+       "price": 14000,
+       "old_price": null,
+       "weight": "0.4 l",
+       "photo": "/img/tea.jpg",
+       "order": 1
+      },
+      {
+       "name": {
+        "uz": "Suv",
+        "ru": "Вода",
+        "en": "Water"
+       },
+       "description": {
+        "uz": "Gazsiz",
+        "ru": "Без газа",
+        "en": "Still"
+       },
+       "price": 5000,
+       "old_price": null,
+       "weight": "0.5 l",
+       "photo": "/img/water.jpg",
+       "order": 2
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

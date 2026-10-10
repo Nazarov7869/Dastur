@@ -1,0 +1,90 @@
+/* Ulfatlar boshqaruv paneli — logodagi ranglar: yashil #0F3B2E, sariq #FFC42E, qizil #E8452C */
+:root,
+html[data-theme='light'] {
+  --primary: #0f3b2e;
+  --secondary: #0f3b2e;
+  --accent: #ffc42e;
+  --primary-fg: #ffffff;
+  --header-bg: #0f3b2e;
+  --header-color: #ffffff;
+  --header-branding-color: #ffc42e;
+  --header-link-color: #ffffff;
+  --breadcrumbs-bg: #16503f;
+  --breadcrumbs-fg: #d8e8e1;
+  --breadcrumbs-link-fg: #ffffff;
+  --link-fg: #0f6b4f;
+  --link-hover-color: #cf371f;
+  --link-selected-fg: #0f3b2e;
+  --button-bg: #0f3b2e;
+  --button-hover-bg: #16503f;
+  --default-button-bg: #0f6b4f;
+  --default-button-hover-bg: #0f3b2e;
+  --selected-row: #fff5d1;
+  --selected-bg: #eef5f1;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary: #16503f;
+    --secondary: #0a2a20;
+    --header-bg: #0a2a20;
+    --breadcrumbs-bg: #0f3b2e;
+    --link-fg: #ffc42e;
+    --link-hover-color: #ffd563;
+    --link-selected-fg: #ffc42e;
+    --selected-row: #17463a;
+  }
+}
+html[data-theme='dark'] {
+  --primary: #16503f;
+  --secondary: #0a2a20;
+  --header-bg: #0a2a20;
+  --breadcrumbs-bg: #0f3b2e;
+  --link-fg: #ffc42e;
+  --link-hover-color: #ffd563;
+  --link-selected-fg: #ffc42e;
+  --selected-row: #17463a;
+}
+
+/* Logotip */
+#header { padding-block: 12px; }
+.brand { display: inline-flex; align-items: center; gap: 12px; }
+.brand img { display: block; height: 30px; width: auto; }
+.brand span { color: #ffc42e; font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; }
+.login #header { justify-content: center; }
+
+/* Bosh sahifa ko'rsatkichlari */
+.dash { margin-bottom: 28px; }
+.dash-scope { margin: 0 0 14px; font-size: 15px; }
+.dash-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 14px; margin-bottom: 20px; }
+.dash-card {
+  display: block; padding: 18px 20px; border: 1px solid var(--hairline-color); border-radius: 14px;
+  background: var(--body-bg); color: var(--body-fg); text-decoration: none;
+}
+a.dash-card:hover { border-color: #ffc42e; }
+.dash-card b { display: block; font-size: 30px; line-height: 1.1; color: var(--body-loud-color); }
+.dash-card span { display: block; margin-top: 6px; color: var(--body-quiet-color); font-size: 13px; }
+.dash-card.alert { background: #e8452c; border-color: #e8452c; }
+.dash-card.alert b, .dash-card.alert span { color: #ffffff; }
+
+.dash-panel { margin-bottom: 20px; border: 1px solid var(--hairline-color); border-radius: 14px; overflow-x: auto; }
+.dash-panel h2 { margin: 0; padding: 12px 16px; background: var(--primary); color: #ffffff; font-size: 14px; font-weight: 600; }
+.dash-panel table { width: 100%; }
+.dash-panel p { margin: 0; padding: 16px; }
+.dash-panel .nowrap { white-space: nowrap; }
+
+.status { display: inline-block; padding: 3px 10px; border-radius: 999px; font-size: 12px; font-weight: 700; white-space: nowrap; }
+.status-new { background: #e8452c; color: #ffffff; }
+.status-accepted { background: #ffc42e; color: #0f3b2e; }
+.status-cooking { background: #ffe39a; color: #0f3b2e; }
+.status-delivering { background: #cfe9dc; color: #0f3b2e; }
+
+/* Buyurtmalar ro'yxatida holat tanlovi yaqqol ko'rinsin */
+#changelist .field-status select { font-weight: 700; }
+
+/* Bosh sahifa butun kenglikni egallaydi; jadvaldagi so'zlar harflab bo'linmaydi */
+.dashboard #content { width: auto; max-width: none; }
+.dash-panel table { min-width: 720px; }
+.dash-panel th, .dash-panel td { word-break: normal; overflow-wrap: normal; white-space: normal; vertical-align: top; }
+.dash-panel th { white-space: nowrap; }
+.dash-panel td:first-child { white-space: nowrap; }

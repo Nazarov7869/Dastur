@@ -1,0 +1,73 @@
+{% extends "admin/index.html" %}
+{% load humanize %}
+
+{% block content %}
+  <section class="dash">
+    {% if dashboard.is_manager %}
+      <p class="dash-scope">
+        {% if dashboard.restaurants %}Sizning oshxonangiz: <b>{{ dashboard.restaurants|join:", " }}</b>
+        {% else %}Sizga hali oshxona biriktirilmagan — bosh adminga murojaat qiling.{% endif %}
+      </p>
+    {% endif %}
+
+    <div class="dash-cards">
+      <a class="dash-card {% if dashboard.new_count %}alert{% endif %}" href="{% url 'admin:shop_order_changelist' %}?status__exact=new">
+        <b>{{ dashboard.new_count }}</b><span>Yangi buyurtma — javob kutyapti</span>
+      </a>
+      <a class="dash-card" href="{% url 'admin:shop_order_changelist' %}">
+        <b>{{ dashboard.active_count }}</b><span>Jarayonda (tayyorlanmoqda, yo'lda)</span>
+      </a>
+      <div class="dash-card">
+        <b>{{ dashboard.today_count }}</b><span>Bugungi buyurtmalar</span>
+      </div>
+      <div class="dash-card">
+        <b>{{ dashboard.today_revenue|intcomma }}</b><span>Bugungi tushum, so'm (bekor qilinganlarsiz)</span>
+      </div>
+      {% if not dashboard.is_manager %}
+        <a class="dash-card" href="{% url 'admin:shop_restaurant_changelist' %}">
+          <b>{{ dashboard.restaurant_count }}</b><span>Saytdagi oshxonalar</span>
+        </a>
+      {% endif %}
+    </div>
+
+    <div class="dash-panel">
+      <h2>Kutilayotgan buyurtmalar</h2>
+      {% if dashboard.waiting %}
+        <table>
+          <thead><tr><th>№</th><th>Vaqt</th><th>Oshxona</th><th>Taomlar</th><th>Jami</th><th>Manzil</th><th>Holat</th></tr></thead>
+          <tbody>
+            {% for order in dashboard.waiting %}
+              <tr>
+                <td><a href="{% url 'admin:shop_order_change' order.pk %}"><b>{{ order.number }}</b></a></td>
+                <td>{{ order.created_at|time:"H:i" }}</td>
+                <td>{{ order.restaurant.name }}</td>
+                <td>{% for item in order.items.all %}{{ item.quantity }} × {{ item.name }}{% if not forloop.last %}, {% endif %}{% endfor %}</td>
+                <td class="nowrap">{{ order.total|intcomma }} so'm</td>
+                <td>{{ order.address }}<br><span class="quiet">{{ order.phone }}</span></td>
+                <td><span class="status status-{{ order.status }}">{{ order.get_status_display }}</span></td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      {% else %}
+        <p class="quiet">Hozircha kutilayotgan buyurtma yo'q.</p>
+      {% endif %}
+    </div>
+
+    {% if dashboard.top_today %}
+      <div class="dash-panel">
+        <h2>Bugun eng ko'p sotgan oshxonalar</h2>
+        <table>
+          <thead><tr><th>Oshxona</th><th>Buyurtmalar</th><th>Tushum</th></tr></thead>
+          <tbody>
+            {% for row in dashboard.top_today %}
+              <tr><td>{{ row.restaurant__name }}</td><td>{{ row.count }}</td><td>{{ row.revenue|intcomma }} so'm</td></tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    {% endif %}
+  </section>
+
+  {{ block.super }}
+{% endblock %}

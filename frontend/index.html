@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="uz" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="/logo/favicon.svg" />
+    <title>Ulfatlar — taom yetkazib berish</title>
+    <script>
+      // Saqlangan rejim va tilni sahifa chizilishidan oldin qo'llaymiz (miltillamasligi uchun)
+      try {
+        var theme = JSON.parse(localStorage.getItem('dx_theme'));
+        if (theme === 'light' || theme === 'dark') document.documentElement.dataset.theme = theme;
+        var lang = JSON.parse(localStorage.getItem('dx_lang'));
+        if (lang) document.documentElement.lang = lang;
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
