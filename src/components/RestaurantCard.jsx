@@ -1,0 +1,32 @@
+import { Link } from 'react-router-dom';
+import { useStore } from '../store.jsx';
+import { distance } from '../lib/format.js';
+import Icon from './Icon.jsx';
+
+export default function RestaurantCard({ restaurant: r }) {
+  const { favs, toggleFav } = useStore();
+  const fav = favs.includes(r.id);
+
+  return (
+    <article className="rcard">
+      <div className="rcard-photo">
+        <img src={r.cover} alt="" loading="lazy" />
+        {r.discount > 0 && <span className="tag tag-sale">−{r.discount}%</span>}
+        <span className="tag tag-time"><Icon name="clock" size={14} /> {r.time}–{r.time + 10} daq</span>
+        <button
+          className={`heart ${fav ? 'on' : ''}`}
+          onClick={() => toggleFav(r.id)}
+          aria-pressed={fav}
+          aria-label={`${r.name} — sevimlilar`}
+        >
+          <Icon name="heart" size={18} filled={fav} />
+        </button>
+      </div>
+      <div className="rcard-body">
+        <h3><Link to={`/r/${r.id}`} className="stretched">{r.name}</Link></h3>
+        <span className="rating"><Icon name="star" size={14} filled /> {r.rating}</span>
+        <p>{r.cuisine} · {distance(r.dist)}</p>
+      </div>
+    </article>
+  );
+}

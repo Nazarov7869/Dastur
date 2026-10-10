@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tezkor — taom yetkazib berish</title>
+<style>
+  :root {
+    --bg: #161616;
+    --panel: #212121;
+    --panel-2: #2c2c2c;
+    --line: #343434;
+    --text: #f4f4f4;
+    --muted: #9b9b9b;
+    --accent: #fce000;
+    --accent-ink: #1a1a1a;
+    --green: #3ecf6e;
+    --red: #ff5c4d;
+    --radius: 20px;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 15px/1.4 "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+  }
+  button, input, select, textarea { font: inherit; color: inherit; }
+  button { cursor: pointer; border: 0; background: none; }
+  h1, h2, h3, p { margin: 0; }
+
+  /* ---------- Header ---------- */
+  header {
+    position: sticky; top: 0; z-index: 20; background: var(--bg);
+    display: flex; align-items: center; gap: 16px; padding: 10px 24px;
+    border-bottom: 1px solid var(--line);
+  }
+  .logo { display: flex; align-items: center; gap: 8px; font-size: 22px; font-weight: 800; letter-spacing: -.5px; text-decoration: none; color: var(--text); }
+  .logo i { width: 26px; height: 26px; border-radius: 50%; background: var(--accent); display: grid; place-items: center; font-style: normal; font-size: 15px; }
+  .search { flex: 0 1 400px; position: relative; }
+  .search input {
+    width: 100%; height: 46px; border-radius: 16px; border: 0; outline: 0;
+    background: var(--panel-2); padding: 0 16px 0 42px;
+  }
+  .search input:focus { box-shadow: 0 0 0 2px var(--accent); }
+  .search::before { content: "🔍"; position: absolute; left: 14px; top: 11px; font-size: 15px; opacity: .7; }
+  .btn {
+    height: 46px; padding: 0 18px; border-radius: 16px; background: var(--panel-2);
+    font-weight: 600; white-space: nowrap; transition: filter .15s;
+  }
+  .btn:hover { filter: brightness(1.15); }
+  .btn.accent { background: var(--accent); color: var(--accent-ink); }
+  .btn.wide { width: 100%; }
+  .btn:disabled { opacity: .45; cursor: not-allowed; }
+  #addrBtn { max-width: 260px; overflow: hidden; text-overflow: ellipsis; }
+  .spacer { flex: 1; }
+
+  /* ---------- Home ---------- */
+  .home { max-width: 1320px; margin: 0 auto; padding: 24px; }
+  .home h1 { font-size: 26px; margin-bottom: 16px; }
+  .filters {
+    display: flex; align-items: center; gap: 4px; background: var(--panel);
+    border-radius: var(--radius); padding: 8px; margin-bottom: 32px; overflow-x: auto;
+  }
+  .chip { padding: 12px 18px; border-radius: 14px; white-space: nowrap; font-weight: 500; }
+  .chip:hover { background: var(--panel-2); }
+  .chip.on { background: var(--bg); font-weight: 700; }
+  .filters select {
+    margin-left: auto; height: 44px; border-radius: 14px; border: 0; outline: 0;
+    background: var(--panel-2); padding: 0 12px;
+  }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 32px 24px; }
+  .rcard { text-decoration: none; color: inherit; display: block; }
+  .cover {
+    position: relative; height: 160px; border-radius: var(--radius); overflow: hidden;
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    font-size: 58px; transition: transform .2s;
+  }
+  .cover span:nth-child(2) { font-size: 84px; }
+  .rcard:hover .cover { transform: scale(1.02); }
+  .fav {
+    position: absolute; top: 10px; right: 10px; width: 36px; height: 36px; border-radius: 50%;
+    background: rgba(0,0,0,.45); font-size: 17px; line-height: 1; display: grid; place-items: center; color: #fff;
+  }
+  .fav.on { color: var(--red); background: #fff; }
+  .rmeta { padding: 10px 6px 0; }
+  .rmeta .row { display: flex; justify-content: space-between; gap: 8px; font-weight: 700; font-size: 16px; }
+  .rmeta .sub { color: var(--muted); font-size: 13px; margin-top: 2px; }
+  .badge {
+    display: inline-block; margin-top: 8px; padding: 3px 9px; border-radius: 8px;
+    background: rgba(62,207,110,.14); color: var(--green); font-size: 12px; font-weight: 600;
+  }
+  .empty { text-align: center; color: var(--muted); padding: 60px 20px; }
+  .empty b { display: block; font-size: 44px; margin-bottom: 8px; }
+
+  /* ---------- Restaurant page ---------- */
+  .rest { display: grid; grid-template-columns: 230px minmax(0, 1fr) 330px; gap: 28px; max-width: 1560px; margin: 0 auto; padding: 24px; align-items: start; }
+  .side { position: sticky; top: 92px; max-height: calc(100vh - 110px); overflow-y: auto; }
+  .back { display: flex; align-items: center; gap: 8px; height: 50px; padding: 0 18px; border-radius: 16px; background: var(--panel); text-decoration: none; color: inherit; font-weight: 600; margin-bottom: 24px; }
+  .side h3 { padding: 0 14px 10px; font-size: 19px; }
+  .side nav a { display: block; padding: 12px 14px; border-radius: 14px; text-decoration: none; color: inherit; font-weight: 500; }
+  .side nav a:hover { background: var(--panel); }
+  .side nav a.on { background: var(--panel-2); font-weight: 700; }
+  .hero {
+    position: relative; height: 300px; border-radius: 28px; overflow: hidden;
+    display: flex; align-items: center; justify-content: flex-end; gap: 16px; padding-right: 6%;
+    font-size: 110px;
+  }
+  .hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(0,0,0,.6), transparent 70%); }
+  .hero .info { position: absolute; left: 36px; bottom: 36px; z-index: 1; font-size: 15px; }
+  .hero h1 { font-size: 40px; letter-spacing: -1px; margin-bottom: 14px; }
+  .pill { display: inline-flex; align-items: center; gap: 8px; height: 50px; padding: 0 16px; border-radius: 14px; background: rgba(255,255,255,.9); color: #111; font-weight: 700; margin-right: 8px; }
+  .pill small { display: block; font-weight: 500; color: #666; font-size: 11px; line-height: 1; }
+  .promo { display: flex; align-items: center; gap: 14px; background: var(--panel); border-radius: var(--radius); padding: 18px 20px; margin-top: 16px; font-weight: 600; }
+  .promo i { font-style: normal; width: 40px; height: 40px; border-radius: 50%; background: var(--green); display: grid; place-items: center; font-size: 20px; flex: none; }
+  .section { scroll-margin-top: 90px; padding-top: 36px; }
+  .section h2 { font-size: 28px; margin-bottom: 18px; }
+  .items { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 14px; }
+  .item { background: var(--panel); border-radius: var(--radius); padding: 10px; display: flex; flex-direction: column; }
+  .item .pic { height: 130px; border-radius: 14px; display: grid; place-items: center; font-size: 66px; background: #f3efe8; }
+  .item .price { font-weight: 800; font-size: 17px; margin-top: 10px; }
+  .item .price s { display: inline-block; white-space: nowrap; color: var(--muted); font-weight: 500; font-size: 13px; margin-left: 6px; }
+  .item .name { font-weight: 600; margin-top: 2px; }
+  .item .desc { color: var(--muted); font-size: 12.5px; margin: 4px 0 10px; flex: 1; }
+  .add { width: 100%; height: 40px; border-radius: 12px; background: var(--panel-2); font-weight: 700; }
+  .add:hover { background: var(--accent); color: var(--accent-ink); }
+  .step { display: flex; align-items: center; justify-content: space-between; height: 40px; border-radius: 12px; background: var(--accent); color: var(--accent-ink); font-weight: 800; }
+  .step button { width: 44px; height: 40px; font-size: 20px; font-weight: 700; color: inherit; }
+
+  /* ---------- Cart ---------- */
+  .cartbox { background: var(--panel); border-radius: 24px; padding: 18px; position: sticky; top: 92px; min-height: 420px; max-height: calc(100vh - 110px); display: flex; flex-direction: column; }
+  .cart { display: flex; flex-direction: column; flex: 1; min-height: 0; }
+  .cart h2 { font-size: 22px; }
+  .cart .from { color: var(--muted); font-size: 13px; margin-bottom: 10px; }
+  .cart .lines { flex: 1; overflow-y: auto; margin: 6px -6px; padding: 0 6px; }
+  .line { display: flex; align-items: center; gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+  .line .em { width: 44px; height: 44px; border-radius: 12px; background: #f3efe8; display: grid; place-items: center; font-size: 24px; flex: none; }
+  .line .t { flex: 1; min-width: 0; font-size: 14px; font-weight: 600; }
+  .line .t small { display: block; color: var(--muted); font-weight: 500; }
+  .line .step { width: 92px; height: 32px; background: var(--panel-2); color: var(--text); flex: none; }
+  .line .step button { width: 30px; height: 32px; font-size: 17px; }
+  .sum { display: flex; justify-content: space-between; color: var(--muted); font-size: 14px; padding: 3px 0; }
+  .sum.total { color: var(--text); font-weight: 800; font-size: 18px; padding: 10px 0 14px; }
+  .hint { font-size: 12.5px; color: var(--green); padding: 6px 0; }
+  .cart-empty { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: var(--muted); padding: 30px 10px; }
+  .cart-empty b { font-size: 64px; }
+  .cart-empty strong { color: var(--text); font-size: 19px; margin: 8px 0 4px; }
+  .link { color: var(--muted); font-size: 13px; text-decoration: underline; margin-left: auto; }
+  .cart .head { display: flex; align-items: baseline; }
+
+  #cartbar {
+    position: fixed; left: 16px; right: 16px; bottom: 16px; z-index: 15; height: 56px; border-radius: 18px;
+    background: var(--accent); color: var(--accent-ink); font-weight: 800; font-size: 16px;
+    display: flex; align-items: center; justify-content: space-between; padding: 0 22px;
+    max-width: 520px; margin: 0 auto; box-shadow: 0 8px 30px rgba(0,0,0,.5);
+  }
+
+  /* ---------- Modal / toast ---------- */
+  #modal { position: fixed; inset: 0; z-index: 50; background: rgba(0,0,0,.65); display: grid; place-items: center; padding: 16px; }
+  .sheet { background: var(--panel); border-radius: 24px; padding: 24px; width: 100%; max-width: 460px; max-height: 90vh; overflow-y: auto; position: relative; display: flex; flex-direction: column; }
+  .sheet > h2 { font-size: 22px; margin-bottom: 16px; padding-right: 36px; }
+  .close { position: absolute; top: 16px; right: 16px; width: 36px; height: 36px; border-radius: 50%; background: var(--panel-2); font-size: 16px; }
+  label { display: block; font-size: 13px; color: var(--muted); margin-bottom: 14px; }
+  label input, label textarea { display: block; width: 100%; margin-top: 6px; padding: 12px 14px; border-radius: 14px; border: 1px solid var(--line); background: var(--bg); outline: 0; color: var(--text); }
+  label input:focus, label textarea:focus { border-color: var(--accent); }
+  .pay { display: flex; gap: 8px; margin-bottom: 16px; }
+  .pay label { flex: 1; margin: 0; }
+  .pay input { position: absolute; opacity: 0; }
+  .pay span { display: block; text-align: center; padding: 12px; border-radius: 14px; background: var(--bg); border: 1px solid var(--line); color: var(--text); font-weight: 600; font-size: 14px; cursor: pointer; }
+  .pay input:checked + span { border-color: var(--accent); background: rgba(252,224,0,.1); }
+  .pay input:focus-visible + span { outline: 2px solid var(--accent); }
+  .ok { text-align: center; }
+  .ok b { font-size: 64px; display: block; }
+  .ok p { color: var(--muted); margin: 8px 0 20px; }
+  .kv { display: flex; justify-content: space-between; gap: 16px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+  .kv span:first-child { color: var(--muted); }
+  #toast { position: fixed; left: 50%; bottom: 90px; transform: translateX(-50%); z-index: 60; background: #fff; color: #111; padding: 12px 20px; border-radius: 14px; font-weight: 600; box-shadow: 0 8px 30px rgba(0,0,0,.5); }
+  [hidden] { display: none !important; }
+
+  /* ---------- Responsive ---------- */
+  @media (min-width: 1101px) { body.page-rest #cartbar { display: none; } }
+  @media (max-width: 1100px) {
+    .rest { grid-template-columns: 210px minmax(0, 1fr); }
+    .rest > .cartbox { display: none; }
+  }
+  @media (max-width: 760px) {
+    header { padding: 10px 14px; gap: 8px; flex-wrap: wrap; }
+    .search { order: 5; flex: 1 1 100%; }
+    #addrBtn { max-width: 150px; }
+    .home, .rest { padding: 14px; }
+    .rest { grid-template-columns: minmax(0, 1fr); gap: 12px; }
+    .side { position: sticky; top: 122px; z-index: 10; background: var(--bg); display: flex; gap: 8px; align-items: center; overflow-x: auto; margin: 0 -14px; padding: 8px 14px; max-height: none; }
+    .side h3 { display: none; }
+    .back { margin: 0; height: 42px; flex: none; }
+    .side nav { display: flex; gap: 4px; }
+    .side nav a { white-space: nowrap; padding: 10px 14px; }
+    .section { scroll-margin-top: 190px; }
+    .hero { height: 200px; font-size: 64px; }
+    .hero .info { left: 18px; bottom: 18px; }
+    .hero h1 { font-size: 28px; }
+    .items { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+    .item .pic { height: 100px; font-size: 52px; }
+    .grid { gap: 22px 14px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <a class="logo" href="#/"><i>🍴</i>Tezkor</a>
+  <div class="search"><input id="q" type="search" autocomplete="off" aria-label="Qidirish"></div>
+  <button class="btn accent" id="addrBtn" data-act="address"></button>
+  <div class="spacer"></div>
+  <button class="btn" data-act="login">Kirish</button>
+</header>
+
+<main id="app"></main>
+
+<button id="cartbar" data-act="open-cart" hidden></button>
+<div id="modal" hidden></div>
+<div id="toast" hidden></div>
+
+<script>
+/* =====================================================================
+   MA'LUMOTLAR — hozircha shu yerda, keyin serverdan (API) olinadi
+   ===================================================================== */
+const CATEGORIES = [
+  ['all', 'Hammasi'], ['fav', '♥ Sevimlilar'], ['burger', 'Burgerlar'], ['sushi', 'Sushi'],
+  ['pizza', 'Pitsa'], ['milliy', 'Milliy taomlar'], ['pasta', 'Pasta'], ['gosht', "Go'sht"],
+  ['nonushta', 'Nonushta'], ['shirinlik', 'Shirinliklar']
+];
+
+// Taom: [nomi, tavsifi, narxi (so'm), og'irligi, emoji]
+const MENUS = {
+  pizza: [
+    ['Pitsa', [
+      ['Margarita', 'Pomidor sousi, mozzarella, rayhon', 62000, '480 g', '🍕'],
+      ['Pepperoni', 'Pepperoni kolbasasi, mozzarella', 74000, '520 g', '🍕'],
+      ["To'rt xil pishloq", 'Mozzarella, parmezan, dorblu, cheddar', 82000, '500 g', '🧀'],
+      ["Go'shtli", "Mol go'shti, kolbasa, qo'ziqorin", 89000, '590 g', '🍕'],
+      ['Sabzavotli', "Bulg'or qalampiri, zaytun, pomidor", 66000, '510 g', '🫑']
+    ]],
+    ['Pasta', [
+      ['Karbonara', 'Qaymoqli sous, bekon, parmezan', 48000, '320 g', '🍝'],
+      ['Bolonyeze', "Mol go'shtli pomidor sousi", 46000, '340 g', '🍝']
+    ]],
+    ['Gazaklar', [
+      ['Pishloqli tayoqchalar', '6 dona, sarimsoqli sous bilan', 32000, '220 g', '🥖'],
+      ['Kartoshka fri', 'Tuzlangan, qarsildoq', 18000, '150 g', '🍟'],
+      ['Tovuq qanotchalari', '8 dona, achchiq sous', 44000, '300 g', '🍗']
+    ]],
+    ['Shirinliklar', [
+      ['Shokoladli pechenye', 'Katta, issiq holda', 22000, '120 g', '🍪'],
+      ['Chizkeyk', 'Klassik Nyu-York', 28000, '130 g', '🍰']
+    ]],
+    ['Ichimliklar', [
+      ['Kola', 'Sovuq', 12000, '0.5 l', '🥤'],
+      ['Limonad', "Uy usulida, yalpiz bilan", 16000, '0.4 l', '🍋'],
+      ['Suv', 'Gazsiz', 5000, '0.5 l', '💧']
+    ]]
+  ],
+  burger: [
+    ['Burgerlar', [
+      ['Klassik burger', "Mol go'shti kotleti, salat, pomidor", 38000, '280 g', '🍔'],
+      ['Chizburger', 'Ikki qavat cheddar pishlog\'i', 42000, '300 g', '🍔'],
+      ['Qora burger', "Qora bulochka, karamellangan piyoz", 52000, '320 g', '🍔'],
+      ['Tovuqli burger', 'Qarsildoq tovuq filesi', 36000, '270 g', '🐔'],
+      ['Dabl burger', "Ikkita kotlet, ikki barobar to'yimli", 62000, '420 g', '🍔']
+    ]],
+    ['Kombo', [
+      ['Kombo klassik', 'Burger + fri + ichimlik', 56000, '650 g', '🍱'],
+      ['Kombo ikki kishilik', '2 burger + 2 fri + 2 ichimlik', 105000, '1.3 kg', '🍱']
+    ]],
+    ['Gazaklar', [
+      ['Kartoshka fri', 'Tuzlangan, qarsildoq', 16000, '150 g', '🍟'],
+      ['Naggetslar', '9 dona, sous tanlovi bilan', 28000, '180 g', '🍗'],
+      ['Piyoz halqalari', '8 dona', 20000, '140 g', '🧅']
+    ]],
+    ['Ichimliklar', [
+      ['Kola', 'Sovuq', 12000, '0.5 l', '🥤'],
+      ['Milksheyk', 'Vanilli yoki shokoladli', 24000, '0.4 l', '🥛']
+    ]]
+  ],
+  sushi: [
+    ['Rollar', [
+      ['Filadelfiya', "Losos, qaymoqli pishloq, bodring", 68000, '260 g', '🍣'],
+      ['Kaliforniya', "Qisqichbaqa, avokado, tobiko", 58000, '240 g', '🍣'],
+      ['Issiq roll', 'Tempura, ugor, unagi sousi', 64000, '270 g', '🍤'],
+      ['Sabzavotli roll', 'Avokado, bodring, qalampir', 38000, '210 g', '🥒']
+    ]],
+    ['Setlar', [
+      ['Set kichik', '16 dona, 2 xil roll', 115000, '520 g', '🍱'],
+      ['Set katta', '40 dona, 5 xil roll', 259000, '1.3 kg', '🍱']
+    ]],
+    ['Sushi va sashimi', [
+      ['Sushi losos', '2 dona', 26000, '70 g', '🍣'],
+      ['Sashimi tunets', '5 bo\'lak', 54000, '100 g', '🐟'],
+      ['Onigiri', 'Losos bilan', 22000, '120 g', '🍙']
+    ]],
+    ['Sho\'rvalar', [
+      ['Miso sho\'rva', "Tofu, dengiz o'ti", 24000, '250 ml', '🍜'],
+      ['Ramen', "Tovuq go'shti, tuxum, ugra", 48000, '450 ml', '🍜']
+    ]],
+    ['Ichimliklar', [
+      ["Ko'k choy", 'Choynakda', 14000, '0.5 l', '🍵'],
+      ['Suv', 'Gazsiz', 5000, '0.5 l', '💧']
+    ]]
+  ],
+  milliy: [
+    ['Asosiy taomlar', [
+      ["To'y oshi", "Qo'y go'shti, sariq sabzi, no'xat", 42000, '400 g', '🍚'],
+      ["Lag'mon", "Cho'zma ugra, go'sht, sabzavot", 36000, '450 g', '🍜'],
+      ['Manti', "5 dona, qo'y go'shtli", 34000, '350 g', '🥟'],
+      ['Norin', "Ot go'shti, qazi bilan", 44000, '300 g', '🍝'],
+      ['Dimlama', "Go'sht va mavsumiy sabzavotlar", 46000, '420 g', '🥘']
+    ]],
+    ['Kaboblar', [
+      ["Qo'y go'shtli kabob", '1 six', 22000, '100 g', '🍢'],
+      ['Qiyma kabob', '1 six', 16000, '100 g', '🍢'],
+      ['Tovuq kabob', '1 six', 15000, '110 g', '🍗']
+    ]],
+    ["Sho'rvalar", [
+      ['Mastava', 'Guruchli, qatiq bilan', 26000, '400 ml', '🍲'],
+      ["Sho'rva", "Qo'y go'shti, kartoshka", 30000, '450 ml', '🍲']
+    ]],
+    ['Salatlar va non', [
+      ['Achichuk', 'Pomidor, piyoz, rayhon', 14000, '200 g', '🥗'],
+      ['Tandir non', 'Issiq', 5000, '1 dona', '🫓'],
+      ['Somsa', "Tandirda, go'shtli", 12000, '1 dona', '🥟']
+    ]],
+    ['Ichimliklar', [
+      ['Kompot', 'Uy usulida', 10000, '0.5 l', '🧃'],
+      ["Ko'k choy", 'Choynakda', 8000, '0.5 l', '🍵']
+    ]]
+  ],
+  cafe: [
+    ['Nonushta', [
+      ['Kruassan', "Sariyog'li, yangi yopilgan", 18000, '80 g', '🥐'],
+      ['Sirniki', 'Smetana va murabbo bilan', 32000, '200 g', '🥞'],
+      ['Omlet', 'Pishloq va pomidor bilan', 28000, '220 g', '🍳'],
+      ['Avokado tost', 'Pashot tuxum bilan', 42000, '210 g', '🥑']
+    ]],
+    ['Salatlar', [
+      ['Sezar', 'Tovuq, parmezan, kruton', 44000, '250 g', '🥗'],
+      ['Grek salati', 'Feta, zaytun, sabzavotlar', 38000, '240 g', '🥗']
+    ]],
+    ['Shirinliklar', [
+      ['Tiramisu', 'Italyancha klassika', 34000, '140 g', '🍰'],
+      ['Medovik', 'Asalli tort', 28000, '130 g', '🍰'],
+      ['Makarun', '3 dona', 30000, '60 g', '🧁']
+    ]],
+    ['Qahva va choy', [
+      ['Kapuchino', 'Arabika 100%', 24000, '0.3 l', '☕'],
+      ['Latte', 'Sirop tanlovi bilan', 26000, '0.35 l', '☕'],
+      ['Amerikano', '', 18000, '0.25 l', '☕'],
+      ['Mevali choy', 'Choynakda', 22000, '0.6 l', '🫖']
+    ]]
+  ],
+  steak: [
+    ['Steyklar', [
+      ['Ribay', "Marmar mol go'shti", 189000, '300 g', '🥩'],
+      ['Fileminyon', 'Eng yumshoq qism', 215000, '220 g', '🥩'],
+      ["Qo'y qovurg'asi", "Olovda pishirilgan", 145000, '350 g', '🍖']
+    ]],
+    ['Assorti', [
+      ["Go'shtli assorti", '4 kishilik, 5 xil go\'sht', 420000, '1.4 kg', '🍖'],
+      ['Kabob assorti', '6 six', 135000, '600 g', '🍢']
+    ]],
+    ['Garnirlar', [
+      ['Grildagi sabzavotlar', '', 32000, '220 g', '🫑'],
+      ['Kartoshka pyuresi', "Sariyog' bilan", 22000, '200 g', '🥔'],
+      ["Makkajo'xori", 'Grilda', 18000, '1 dona', '🌽']
+    ]],
+    ['Ichimliklar', [
+      ['Limonad', 'Uy usulida', 16000, '0.4 l', '🍋'],
+      ['Suv', 'Gazsiz', 5000, '0.5 l', '💧']
+    ]]
+  ]
+};
+
+const RESTAURANTS = [
+  { id: 'pitsa-uyi', name: 'Pitsa Uyi', menu: 'pizza', cats: ['pizza', 'pasta'], rating: 4.7, reviews: 1628, time: 15, dist: 0.92, discount: 0, emoji: ['🍅', '🍕', '🧀'], bg: ['#b23a2a', '#e8a04a'], address: "Amir Temur ko'chasi, 12", hours: '10:00 – 23:00' },
+  { id: 'gosht', name: "Go'sht", menu: 'steak', cats: ['gosht'], rating: 4.7, reviews: 904, time: 25, dist: 0.71, discount: 0, emoji: ['🌽', '🥩', '🍖'], bg: ['#5a2d1a', '#a8582c'], address: "Shota Rustaveli ko'chasi, 45", hours: '12:00 – 00:00' },
+  { id: 'bufet-17', name: 'Bufet 17', menu: 'cafe', cats: ['nonushta', 'shirinlik'], rating: 4.8, reviews: 512, time: 30, dist: 1.7, discount: 20, emoji: ['☕', '🥞', '🍓'], bg: ['#2c5f8a', '#8fc1e0'], address: "Mirobod ko'chasi, 17", hours: '08:00 – 22:00' },
+  { id: 'roni-pitsa', name: 'Roni Pitsa', menu: 'pizza', cats: ['pizza', 'pasta'], rating: 4.7, reviews: 733, time: 25, dist: 0.44, discount: 0, emoji: ['🥗', '🍕', '🍝'], bg: ['#2f6b3c', '#d9c36a'], address: "Bobur ko'chasi, 8", hours: '11:00 – 23:00' },
+  { id: 'chorsu', name: 'Chorsu Oshxonasi', menu: 'milliy', cats: ['milliy', 'gosht'], rating: 4.6, reviews: 2140, time: 25, dist: 1.5, discount: 0, emoji: ['🫓', '🍚', '🍢'], bg: ['#8a4b1c', '#e0a43a'], address: "Navoiy ko'chasi, 30", hours: '09:00 – 22:00' },
+  { id: 'oqsuv', name: 'Oqsuv', menu: 'milliy', cats: ['milliy'], rating: 4.8, reviews: 1187, time: 30, dist: 0.84, discount: 0, emoji: ['🥟', '🥘', '🥗'], bg: ['#1d6e6a', '#7cc7a8'], address: "Beruniy ko'chasi, 3", hours: '10:00 – 23:00' },
+  { id: 'bon', name: 'Bon!', menu: 'cafe', cats: ['nonushta', 'shirinlik'], rating: 4.8, reviews: 1456, time: 20, dist: 1.9, discount: 15, emoji: ['☕', '🥐', '🍰'], bg: ['#a3632a', '#f0cf8e'], address: "Taras Shevchenko ko'chasi, 28", hours: '07:30 – 23:00' },
+  { id: 'tokio-sushi', name: 'Tokio Sushi', menu: 'sushi', cats: ['sushi'], rating: 4.8, reviews: 860, time: 10, dist: 1.4, discount: 0, emoji: ['🥢', '🍣', '🍤'], bg: ['#14213d', '#56689a'], address: "Oybek ko'chasi, 22", hours: '11:00 – 23:00' },
+  { id: 'qora-burger', name: 'Qora Burger', menu: 'burger', cats: ['burger'], rating: 4.5, reviews: 96, time: 25, dist: 1.7, discount: 0, emoji: ['🍟', '🍔', '🥤'], bg: ['#5c1220', '#b8324a'], address: "Nukus ko'chasi, 71", hours: '10:00 – 02:00' },
+  { id: 'burger-elchixona', name: 'Burger Elchixonasi', menu: 'burger', cats: ['burger'], rating: 4.5, reviews: 640, time: 10, dist: 1.1, discount: 40, emoji: ['🌭', '🍔', '🍟'], bg: ['#c9736b', '#f3c9b8'], address: "Mustaqillik shoh ko'chasi, 5", hours: '10:00 – 00:00' },
+  { id: 'ya-sushi', name: 'Yapon Sushi', menu: 'sushi', cats: ['sushi'], rating: 4.5, reviews: 1320, time: 20, dist: 1.6, discount: 40, emoji: ['🍙', '🍱', '🍣'], bg: ['#0f3d6b', '#3d8fc9'], address: "Labzak ko'chasi, 14", hours: '11:00 – 23:00' },
+  { id: 'teppan', name: 'Teppan', menu: 'sushi', cats: ['sushi'], rating: 4.7, reviews: 418, time: 35, dist: 0.65, discount: 0, emoji: ['🐟', '🍜', '🍵'], bg: ['#3a4a5c', '#9db0c4'], address: "Sadiq Azimov ko'chasi, 9", hours: '12:00 – 23:00' }
+];
+
+const FREE_DELIVERY_FROM = 80000;
+const DELIVERY_FEE = 9000;
+const SERVICE_FEE = 2000;
+
+/* =====================================================================
+   HOLAT (brauzer xotirasida saqlanadi)
+   ===================================================================== */
+const load = (key, fallback) => {
+  try { return JSON.parse(localStorage.getItem(key)) ?? fallback; } catch { return fallback; }
+};
+const save = (key, value) => {
+  try { localStorage.setItem(key, JSON.stringify(value)); } catch {}
+};
+
+const state = { cat: 'all', sort: 'default', q: '' };
+let cart = load('tz_cart', { rid: null, items: {} });
+let favs = new Set(load('tz_favs', []));
+let address = load('tz_address', '');
+
+/* =====================================================================
+   YORDAMCHI FUNKSIYALAR
+   ===================================================================== */
+const $ = (sel) => document.querySelector(sel);
+const fmt = (n) => String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + " so'm";
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const fmtDist = (km) => (km < 1 ? Math.round(km * 1000) + ' m' : km.toFixed(1) + ' km');
+const getRest = (id) => RESTAURANTS.find((r) => r.id === id);
+const coverStyle = (r) => `background:linear-gradient(135deg,${r.bg[0]},${r.bg[1]})`;
+const priceOf = (r, base) => (r.discount ? Math.round(base * (100 - r.discount) / 10000) * 100 : base);
+
+// "restoran|bo'lim|taom" ko'rinishidagi id bo'yicha taomni topadi
+function getItem(id) {
+  const [rid, si, ii] = id.split('|');
+  const r = getRest(rid);
+  const it = r && MENUS[r.menu][si] && MENUS[r.menu][si][1][ii];
+  if (!it) return null;
+  return { id, r, name: it[0], desc: it[1], base: it[2], price: priceOf(r, it[2]), weight: it[3], emoji: it[4] };
+}
+
+function cartLines() {
+  return Object.entries(cart.items)
+    .map(([id, qty]) => ({ item: getItem(id), qty }))
+    .filter((l) => l.item);
+}
+
+function cartTotals() {
+  const lines = cartLines();
+  const count = lines.reduce((s, l) => s + l.qty, 0);
+  const subtotal = lines.reduce((s, l) => s + l.qty * l.item.price, 0);
+  const delivery = subtotal >= FREE_DELIVERY_FROM ? 0 : DELIVERY_FEE;
+  return { lines, count, subtotal, delivery, total: subtotal + delivery + SERVICE_FEE };
+}
+
+let toastTimer;
+function toast(text) {
+  const el = $('#toast');
+  el.textContent = text;
+  el.hidden = false;
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => { el.hidden = true; }, 2400);
+}
+
+function openModal(html) {
+  $('#modal').innerHTML = `<div class="sheet"><button class="close" data-act="close" aria-label="Yopish">✕</button>${html}</div>`;
+  $('#modal').hidden = false;
+}
+function closeModal() {
+  $('#modal').hidden = true;
+  $('#modal').innerHTML = '';
+}
+
+/* =====================================================================
+   BOSH SAHIFA — restoranlar ro'yxati
+   ===================================================================== */
+function renderHome() {
+  const q = state.q.trim().toLowerCase();
+  let list = RESTAURANTS.filter((r) => {
+    if (state.cat === 'fav' ? !favs.has(r.id) : state.cat !== 'all' && !r.cats.includes(state.cat)) return false;
+    if (!q) return true;
+    return r.name.toLowerCase().includes(q) ||
+      MENUS[r.menu].some(([, items]) => items.some((it) => it[0].toLowerCase().includes(q)));
+  });
+  const sorters = {
+    rating: (a, b) => b.rating - a.rating,
+    time: (a, b) => a.time - b.time,
+    dist: (a, b) => a.dist - b.dist
+  };
+  if (sorters[state.sort]) list = [...list].sort(sorters[state.sort]);
+
+  const chips = CATEGORIES.map(([id, label]) =>
+    `<button class="chip ${state.cat === id ? 'on' : ''}" data-act="cat" data-id="${id}">${label}</button>`).join('');
+  const sortOptions = [['default', 'Saralash'], ['rating', 'Reyting bo\'yicha'], ['time', 'Tezroq yetkazish'], ['dist', 'Yaqinroq']]
+    .map(([v, l]) => `<option value="${v}" ${state.sort === v ? 'selected' : ''}>${l}</option>`).join('');
+
+  const cards = list.map((r) => `
+    <a class="rcard" href="#/r/${r.id}">
+      <div class="cover" style="${coverStyle(r)}">
+        ${r.emoji.map((e) => `<span>${e}</span>`).join('')}
+        <button class="fav ${favs.has(r.id) ? 'on' : ''}" data-act="fav" data-id="${r.id}" aria-label="Sevimlilarga qo'shish">${favs.has(r.id) ? '♥' : '♡'}</button>
+      </div>
+      <div class="rmeta">
+        <div class="row"><span>${esc(r.name)}</span><span>★ ${r.rating}</span></div>
+        <div class="sub">${r.time} daqiqa · ${fmtDist(r.dist)}</div>
+        ${r.discount ? `<span class="badge">−${r.discount}% barcha taomlarga</span>` : ''}
+      </div>
+    </a>`).join('');
+
+  const emptyText = state.cat === 'fav' && !q
+    ? "Sevimlilar hali yo'q — restoran rasmidagi ♡ belgisini bosing"
+    : "Hech narsa topilmadi. Boshqa so'z yoki toifani sinab ko'ring";
+
+  $('#app').innerHTML = `
+    <div class="home">
+      <h1>Restoranlar</h1>
+      <div class="filters">${chips}<select id="sort" aria-label="Saralash">${sortOptions}</select></div>
+      ${list.length ? `<div class="grid">${cards}</div>` : `<div class="empty"><b>🍽️</b>${emptyText}</div>`}
+    </div>`;
+}
+
+/* =====================================================================
+   RESTORAN SAHIFASI — menyu
+   ===================================================================== */
+function itemControl(id) {
+  const qty = cart.items[id] || 0;
+  return qty
+    ? `<div class="step"><button data-act="dec" data-id="${id}" aria-label="Kamaytirish">−</button><span>${qty}</span><button data-act="inc" data-id="${id}" aria-label="Ko'paytirish">+</button></div>`
+    : `<button class="add" data-act="inc" data-id="${id}">+ Qo'shish</button>`;
+}
+
+function renderRestaurant(r) {
+  const q = state.q.trim().toLowerCase();
+  const sections = MENUS[r.menu]
+    .map(([title, items], si) => ({
+      title, si,
+      items: items.map((it, ii) => ({ it, id: `${r.id}|${si}|${ii}` }))
+        .filter(({ it }) => !q || it[0].toLowerCase().includes(q) || it[1].toLowerCase().includes(q))
+    }))
+    .filter((s) => s.items.length);
+
+  const nav = sections.map((s, i) =>
+    `<a href="#sec-${s.si}" class="${i === 0 ? 'on' : ''}" data-act="jump" data-id="sec-${s.si}">${esc(s.title)}</a>`).join('');
+
+  const body = sections.map((s) => `
+    <section class="section" id="sec-${s.si}">
+      <h2>${esc(s.title)}</h2>
+      <div class="items">
+        ${s.items.map(({ it, id }) => {
+          const price = priceOf(r, it[2]);
+          return `
+          <div class="item">
+            <div class="pic">${it[4]}</div>
+            <div class="price">${fmt(price)}${price !== it[2] ? `<s>${fmt(it[2])}</s>` : ''}</div>
+            <div class="name">${esc(it[0])}</div>
+            <div class="desc">${esc(it[1])}${it[1] ? ' · ' : ''}${it[3]}</div>
+            <div data-ctl="${id}">${itemControl(id)}</div>
+          </div>`;
+        }).join('')}
+      </div>
+    </section>`).join('');
+
+  $('#app').innerHTML = `
+    <div class="rest">
+      <aside class="side">
+        <a class="back" href="#/">← Barcha restoranlar</a>
+        <h3>Menyu</h3>
+        <nav>${nav}</nav>
+      </aside>
+      <div>
+        <div class="hero" style="${coverStyle(r)}">
+          ${r.emoji.map((e) => `<span>${e}</span>`).join('')}
+          <div class="info">
+            <h1>${esc(r.name)}</h1>
+            <span class="pill">★ <span>${r.rating}<small>${r.reviews} baho</small></span></span>
+            <button class="pill" data-act="info" data-id="${r.id}" aria-label="Restoran haqida">ⓘ</button>
+          </div>
+        </div>
+        ${r.discount ? `<div class="promo"><i>🎁</i>−${r.discount}% barcha taomlarga — narxlarda hisobga olingan</div>` : ''}
+        <div class="promo"><i>🛵</i>${fmt(FREE_DELIVERY_FROM)}dan boshlab yetkazib berish bepul · ${r.time} daqiqa</div>
+        ${sections.length ? body : `<div class="empty"><b>🔎</b>Bu restoranda bunday taom topilmadi</div>`}
+      </div>
+      <aside class="cartbox"><div class="cart" data-cart></div></aside>
+    </div>`;
+  renderCart();
+}
+
+// Sahifani aylantirganda chap menyuda joriy bo'limni belgilaydi
+function updateActiveSection() {
+  const links = document.querySelectorAll('.side nav a');
+  if (!links.length) return;
+  const offset = window.innerWidth <= 760 ? 200 : 110;
+  let current = links[0];
+  links.forEach((a) => {
+    const sec = document.getElementById(a.dataset.id);
+    if (sec && sec.getBoundingClientRect().top <= offset) current = a;
+  });
+  links.forEach((a) => a.classList.toggle('on', a === current));
+}
+
+/* =====================================================================
+   SAVAT
+   ===================================================================== */
+function cartHTML() {
+  const { lines, subtotal, delivery, total } = cartTotals();
+  if (!lines.length) {
+    return `<h2>Savat</h2>
+      <div class="cart-empty"><b>🛒</b><strong>Savat bo'm-bo'sh</strong>Menyudan biror mazali narsa qo'shing</div>`;
+  }
+  const r = getRest(cart.rid);
+  const left = FREE_DELIVERY_FROM - subtotal;
+  return `
+    <div class="head"><h2>Savat</h2><button class="link" data-act="clear">Tozalash</button></div>
+    <div class="from">${esc(r.name)} · ${r.time} daqiqa</div>
+    <div class="lines">
+      ${lines.map(({ item, qty }) => `
+        <div class="line">
+          <div class="em">${item.emoji}</div>
+          <div class="t">${esc(item.name)}<small>${fmt(item.price * qty)}</small></div>
+          <div class="step"><button data-act="dec" data-id="${item.id}" aria-label="Kamaytirish">−</button><span>${qty}</span><button data-act="inc" data-id="${item.id}" aria-label="Ko'paytirish">+</button></div>
+        </div>`).join('')}
+    </div>
+    ${left > 0 ? `<div class="hint">Bepul yetkazishgacha yana ${fmt(left)}</div>` : `<div class="hint">Yetkazib berish bepul 🎉</div>`}
+    <div class="sum"><span>Taomlar</span><span>${fmt(subtotal)}</span></div>
+    <div class="sum"><span>Yetkazib berish</span><span>${delivery ? fmt(delivery) : 'Bepul'}</span></div>
+    <div class="sum"><span>Xizmat haqi</span><span>${fmt(SERVICE_FEE)}</span></div>
+    <div class="sum total"><span>Jami</span><span>${fmt(total)}</span></div>
+    <button class="btn accent wide" data-act="checkout">Buyurtma berish</button>`;
+}
+
+function renderCart() {
+  document.querySelectorAll('[data-cart]').forEach((el) => { el.innerHTML = cartHTML(); });
+  const { count, total } = cartTotals();
+  const bar = $('#cartbar');
+  bar.hidden = !count;
+  bar.innerHTML = `<span>Savat · ${count} ta</span><span>${fmt(total)}</span>`;
+}
+
+function changeQty(id, delta) {
+  const item = getItem(id);
+  if (!item) return;
+  if (delta > 0 && cart.rid && cart.rid !== item.r.id && Object.keys(cart.items).length) {
+    const other = getRest(cart.rid);
+    if (!confirm(`Savatda "${other ? other.name : 'boshqa restoran'}" taomlari bor. Savatni tozalab, "${item.r.name}"dan buyurtma berasizmi?`)) return;
+    const oldIds = Object.keys(cart.items);
+    cart = { rid: null, items: {} };
+    oldIds.forEach(refreshControl);
+  }
+  const qty = (cart.items[id] || 0) + delta;
+  if (qty > 0) { cart.items[id] = qty; cart.rid = item.r.id; }
+  else delete cart.items[id];
+  if (!Object.keys(cart.items).length) cart.rid = null;
+  save('tz_cart', cart);
+  refreshControl(id);
+  renderCart();
+}
+
+function refreshControl(id) {
+  document.querySelectorAll(`[data-ctl="${id}"]`).forEach((el) => { el.innerHTML = itemControl(id); });
+}
+
+function clearCart() {
+  const ids = Object.keys(cart.items);
+  cart = { rid: null, items: {} };
+  save('tz_cart', cart);
+  ids.forEach(refreshControl);
+  renderCart();
+}
+
+/* =====================================================================
+   OYNALAR — manzil, buyurtma, restoran haqida
+   ===================================================================== */
+function renderAddressButton() {
+  $('#addrBtn').textContent = address ? '📍 ' + address : '➤ Manzilni kiriting';
+}
+
+function openAddress() {
+  openModal(`
+    <h2>Yetkazib berish manzili</h2>
+    <form data-form="address">
+      <label>Ko'cha, uy, xonadon
+        <input name="address" value="${esc(address)}" placeholder="Masalan: Amir Temur ko'chasi, 15-uy" required>
+      </label>
+      <button class="btn accent wide">Saqlash</button>
+    </form>`);
+  $('#modal input').focus();
+}
+
+function openCheckout() {
+  const { count, total } = cartTotals();
+  if (!count) return;
+  openModal(`
+    <h2>Buyurtmani rasmiylashtirish</h2>
+    <form data-form="checkout">
+      <label>Manzil
+        <input name="address" value="${esc(address)}" placeholder="Ko'cha, uy, xonadon" required>
+      </label>
+      <label>Telefon raqam
+        <input name="phone" type="tel" value="${esc(load('tz_phone', '+998 '))}" placeholder="+998 90 123 45 67" required>
+      </label>
+      <label>Kuryer uchun izoh (ixtiyoriy)
+        <textarea name="note" rows="2" placeholder="Podyezd, qavat, domofon kodi"></textarea>
+      </label>
+      <div class="pay">
+        <label><input type="radio" name="pay" value="Naqd pul" checked><span>💵 Naqd pul</span></label>
+        <label><input type="radio" name="pay" value="Karta"><span>💳 Karta</span></label>
+      </div>
+      <button class="btn accent wide">Tasdiqlash · ${fmt(total)}</button>
+    </form>`);
+}
+
+function openInfo(r) {
+  openModal(`
+    <h2>${esc(r.name)}</h2>
+    <div class="kv"><span>Manzil</span><span>${esc(r.address)}</span></div>
+    <div class="kv"><span>Ish vaqti</span><span>${r.hours}</span></div>
+    <div class="kv"><span>Reyting</span><span>★ ${r.rating} (${r.reviews} baho)</span></div>
+    <div class="kv"><span>Yetkazish</span><span>${r.time} daqiqa · ${fmtDist(r.dist)}</span></div>`);
+}
+
+function submitCheckout(form) {
+  const data = new FormData(form);
+  const phone = String(data.get('phone')).trim();
+  if (phone.replace(/\D/g, '').length < 12) {
+    toast("Telefon raqamni to'liq kiriting: +998 XX XXX XX XX");
+    form.phone.focus();
+    return;
+  }
+  address = String(data.get('address')).trim();
+  save('tz_address', address);
+  save('tz_phone', phone);
+  renderAddressButton();
+
+  const r = getRest(cart.rid);
+  const { total } = cartTotals();
+  // Namuna: buyurtma hech qayerga yuborilmaydi. Bu yerda serverga so'rov bo'ladi.
+  const orderNo = Math.floor(100000 + Math.random() * 900000);
+  clearCart();
+  openModal(`
+    <div class="ok">
+      <b>✅</b>
+      <h2>Buyurtma qabul qilindi</h2>
+      <p>№ ${orderNo} · ${esc(r.name)}<br>Taxminan ${r.time} daqiqada yetkaziladi</p>
+    </div>
+    <div class="kv"><span>Manzil</span><span>${esc(address)}</span></div>
+    <div class="kv"><span>To'lov</span><span>${esc(data.get('pay'))}</span></div>
+    <div class="kv" style="margin-bottom:20px"><span>Jami</span><span><b>${fmt(total)}</b></span></div>
+    <button class="btn accent wide" data-act="close">Yaxshi</button>`);
+}
+
+/* =====================================================================
+   MARSHRUT (#/ — bosh sahifa, #/r/<id> — restoran)
+   ===================================================================== */
+function route() {
+  const m = location.hash.match(/^#\/r\/([\w-]+)/);
+  const r = m && getRest(m[1]);
+  document.body.classList.toggle('page-rest', !!r);
+  $('#q').placeholder = r ? 'Restorandan izlash' : 'Restoran yoki taom qidirish';
+  if (r) renderRestaurant(r); else renderHome();
+  renderCart();
+}
+
+function navigate() {
+  state.q = '';
+  $('#q').value = '';
+  route();
+  window.scrollTo(0, 0);
+}
+
+/* =====================================================================
+   HODISALAR
+   ===================================================================== */
+document.addEventListener('click', (e) => {
+  if (e.target.id === 'modal') return closeModal();
+  const el = e.target.closest('[data-act]');
+  if (!el) return;
+  const { act, id } = el.dataset;
+
+  if (act === 'inc') changeQty(id, 1);
+  else if (act === 'dec') changeQty(id, -1);
+  else if (act === 'clear') clearCart();
+  else if (act === 'cat') { state.cat = id; renderHome(); }
+  else if (act === 'fav') {
+    e.preventDefault(); // kartochka havolasi ochilib ketmasin
+    favs.has(id) ? favs.delete(id) : favs.add(id);
+    save('tz_favs', [...favs]);
+    renderHome();
+  }
+  else if (act === 'jump') {
+    e.preventDefault(); // hash marshrutni buzmasligi uchun
+    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+  }
+  else if (act === 'address') openAddress();
+  else if (act === 'checkout') openCheckout();
+  else if (act === 'open-cart') openModal('<div class="cart" data-cart></div>'), renderCart();
+  else if (act === 'info') openInfo(getRest(id));
+  else if (act === 'close') closeModal();
+  else if (act === 'login') toast("Kirish (ro'yxatdan o'tish) keyingi bosqichda qo'shiladi");
+});
+
+document.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const form = e.target;
+  if (form.dataset.form === 'address') {
+    address = form.address.value.trim();
+    save('tz_address', address);
+    renderAddressButton();
+    closeModal();
+  } else if (form.dataset.form === 'checkout') {
+    submitCheckout(form);
+  }
+});
+
+document.addEventListener('change', (e) => {
+  if (e.target.id === 'sort') { state.sort = e.target.value; renderHome(); }
+});
+
+$('#q').addEventListener('input', (e) => { state.q = e.target.value; route(); });
+document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
+window.addEventListener('scroll', updateActiveSection, { passive: true });
+window.addEventListener('hashchange', navigate);
+
+renderAddressButton();
+route();
+</script>
+</body>
+</html>
